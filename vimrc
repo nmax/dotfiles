@@ -4,6 +4,11 @@ set rtp+=~/dotfiles/vim-plugins/Vundle.vim
 set rtp+=~/dotfiles/vim-plugins/vimproc.vim/autoload
 set rtp+=~/dotfiles/vim-plugins/vimproc.vim/plugin
 
+" Adds syntax files for handlebars / mustache.
+set rtp+=~/dotfiles/vim-plugins/vim-mustache-handlebars/ftdetect
+set rtp+=~/dotfiles/vim-plugins/vim-mustache-handlebars/ftplugin
+set rtp+=~/dotfiles/vim-plugins/vim-mustache-handlebars/syntax
+
 call vundle#begin('~/dotfiles/vim-plugins/')
 
 Plugin 'gmarik/Vundle.vim'
@@ -15,6 +20,9 @@ Plugin 'Shougo/neocomplete.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimproc.vim'
+
+Plugin 'mustache/vim-mustache-handlebars'
+
 
 call vundle#end()            " Required by Vundle
 filetype plugin indent on    " Required by Vundle 
