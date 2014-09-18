@@ -1,6 +1,14 @@
 "===============================================================================
 " Unite | The one plugin to rule them all, and in the dotfiles bind them
 "===============================================================================
+
+" Use ag for search
+if executable('ag')
+  let g:unite_source_grep_command = 'ag'
+  let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
+  let g:unite_source_grep_recursive_opt = ''
+endif
+
 " Start Insert
 let g:unite_enable_start_insert = 1
 let g:unite_enable_short_source_names = 1

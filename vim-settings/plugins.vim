@@ -22,7 +22,7 @@ endif
 
 "let NERDTreeIgnore=['\.pyc$', '\.pyo$', '\.rbc$', '\.rbo$', '\.class$', '\.o$', '\~$']
 
-map <leader>nn :NERDTreeToggle<CR> :NERDTreeMirror<CR>
+map <leader>n :NERDTreeToggle<CR> :NERDTreeMirror<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
