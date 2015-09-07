@@ -1,10 +1,16 @@
-let mapleader=","
+let mapleader = "\<Space>"
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+" Save with lead enter because typing :w sucks
+nnoremap <CR> :w <CR>
+
+" Disable ex mode
+nnoremap Q q
 
 " Prevent * from jumping to the next word occurance
 nnoremap * *N
@@ -16,8 +22,8 @@ imap <silent> <F4> <ESC>:set invpaste<CR>:set paste?<CR>
 " format the entire file
 nnoremap <leader>fef :normal! gg=G``<CR>
 
-" Toggle hlsearch with <leader>hs
-nmap <leader>hs :set hlsearch! hlsearch?<CR>
+" Clear hlsearch with <leader>hs
+nnoremap <leader>hs :nohl<CR>
 
 if has("gui_macvim") && has("gui_running")
   " Map command-[ and command-] to indenting or outdenting
@@ -85,14 +91,10 @@ else
   " Bubble single lines
   nmap <C-Up> [e
   nmap <C-Down> ]e
-  nmap <C-k> [e
-  nmap <C-j> ]e
 
   " Bubble multiple lines
   vmap <C-Up> [egv
   vmap <C-Down> ]egv
-  vmap <C-k> [egv
-  vmap <C-j> ]egv
 
   " Make shift-insert work like in Xterm
   map <S-Insert> <MiddleMouse>

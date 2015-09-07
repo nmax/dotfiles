@@ -1,20 +1,18 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CtrlP
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
 
-" Ignore files that are not under vc.
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
-
-let g:ctrlp_map = ''
+" 'dir':  '\v[\/]\.(git|hg|svn|bower_components|node_modules|tmp)$',
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\.pyc$\|\.pyo$\|\.rbc$|\.rbo$\|\.class$\|\.o$\|\~$\',
+  \ 'dir':  '\v[\/](git|node_modules|hg|bower_components|tmp|svn|dist|public)$',
+  \ 'file': '\v\.(exe|so|dll|woff|ttf|eot|otf)$',
+  \ 'link': 'some_bad_symbolic_links',
   \ }
 
-if has("gui_running")
-  map <D-t> :CtrlP<CR>
-  imap <D-t> <ESC>:CtrlP<CR>
-endif
+let g:ctrlp_map = ''
+nnoremap <C-P> :CtrlP<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree
@@ -22,19 +20,19 @@ endif
 
 "let NERDTreeIgnore=['\.pyc$', '\.pyo$', '\.rbc$', '\.rbo$', '\.class$', '\.o$', '\~$']
 
-map <leader>n :NERDTreeToggle<CR> :NERDTreeMirror<CR>
+nnoremap <F5> :NERDTreeToggle<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Syntastic
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:syntastic_enable_signs=1
-let g:syntastic_auto_loc_list=2
-let g:syntastic_quiet_messages = {'level': 'warnings'}
+let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_html_tidy_quiet_messages = { "level" : "warnings" }
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" vim-javascript 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" let g:javascript_conceal = 1
-" set cole=1
+let g:syntastic_enable_signs = 1
+let g:syntastic_auto_jump = 0
+let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+au BufReadPost *.hbs set syntax=mustache

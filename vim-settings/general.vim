@@ -79,14 +79,15 @@ set wildignore+=*.swp,*~,._*
 
 set backupdir^=~/dotfiles/_backup//    " where to put backup files.
 set directory^=~/dotfiles/_temp//      " where to put swap files.
+set noswapfile
 
 
 " Remapping for CtrlP in macvim
-if has("gui_macvim")
-  macmenu &File.New\ Tab key=<D-S-t>
-endif
+"if has("gui_running")
+  "macmenu &File.New\ Tab key=<D-S-t>
+"endif
 
 " Autosave when switching away from vim
-if has("autocmd")
-  au FocusLost * silent! wall
-endif
+"if has("autocmd")
+  "au FocusLost * silent! wall
+"endif
