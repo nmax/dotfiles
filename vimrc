@@ -15,10 +15,9 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'tpope/vim-surround'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'roman/golden-ratio'
+Plugin 'justincampbell/vim-eighties'
 
-Plugin 'wting/rust.vim'
-
+Plugin 'rust-lang/rust.vim'
 Plugin 'rking/ag.vim'
 
 call vundle#end()            " Required by Vundle

@@ -1,5 +1,5 @@
 "set guifont=Source\ Code\ Pro\ 13
-set guifont=Hack\ 13
+set guifont=Hack\ 12
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
