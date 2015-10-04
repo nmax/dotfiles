@@ -9,10 +9,13 @@ set splitright
 set go-=L
 set go-=T
 
-colorscheme solarized
-set background=dark
-
-if !has('gui_running')
-  let g:solarized_termcolors=16
+if has("gui")
+  set background=light
+else
+  set term=screen-256color-bce
+  let g:solarized_termcolors=256
+  set t_Co=256
   set background=dark
 endif
+
+colorscheme default
