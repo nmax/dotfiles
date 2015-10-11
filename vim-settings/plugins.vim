@@ -35,4 +35,6 @@ let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
 au BufReadPost *.hbs set syntax=mustache
+au BufReadPost *.rs set ft=rust
