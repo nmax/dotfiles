@@ -14,6 +14,7 @@ set laststatus=2
 set cursorline
 set cmdheight=1
 set scrolloff=3
+set wildmenu          " Visual autocomplete for command menu
 
 ""
 "" Whitespace
