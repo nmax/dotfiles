@@ -3,11 +3,11 @@
 ""
 
 set nocompatible      " Use vim, no vi defaults
-set relativenumber            " Show line numbers
+set relativenumber    " Show line numbers
 set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
 set encoding=utf-8    " Set default encoding to UTF-8
-set autoread " If a file is changed outside of Vim reload it without asking
+set autoread          " If a file is changed outside of Vim reload it without asking
 
 set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 set laststatus=2
@@ -17,7 +17,6 @@ set scrolloff=3
 
 ""
 "" Whitespace
-""
 
 set nowrap                        " don't wrap lines
 set tabstop=2                     " a tab is two spaces
