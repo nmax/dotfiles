@@ -3,7 +3,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim' " Plugin Manager
-Plugin 'altercation/vim-colors-solarized' " Colour Schema
+Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 Plugin 'scrooloose/nerdtree' " File Tree Browser
 Plugin 'scrooloose/syntastic' " Generic Linter
 Plugin 'scrooloose/nerdcommenter' " For comments
