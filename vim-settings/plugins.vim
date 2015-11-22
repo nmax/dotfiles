@@ -22,19 +22,29 @@ nnoremap <C-P> :CtrlP<CR>
 
 nnoremap <F5> :NERDTreeToggle<CR>
 
+""""""""""""""""""""""""""""""""""""""""""
+" Neomake
+""""""""""""""""""""""""""""""""""""""""""
+let g:neomake_javascript_jshint_maker = {
+    \ 'args': ['--verbose'],
+    \ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
+    \ }
+let g:neomake_javascript_enabled_makers = ['jshint']
+autocmd! BufWritePost * Neomake
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Syntastic
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_html_tidy_quiet_messages = { "level" : "warnings" }
+"let g:syntastic_javascript_checkers = ['jshint']
+"let g:syntastic_html_tidy_quiet_messages = { "level" : "warnings" }
 
-let g:syntastic_enable_signs = 1
-let g:syntastic_auto_jump = 0
-let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"let g:syntastic_enable_signs = 1
+"let g:syntastic_auto_jump = 0
+"let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 au BufReadPost *.hbs set syntax=mustache
 au BufReadPost *.rs set ft=rust

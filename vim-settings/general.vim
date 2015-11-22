@@ -1,12 +1,9 @@
-""
-"" Basic Setup
-""
-
+" Basics
 set nocompatible      " Use vim, no vi defaults
 set relativenumber    " Show line numbers
 set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
-set encoding=utf-8    " Set default encoding to UTF-8
+"set encoding=utf-8    " Set default encoding to UTF-8
 set autoread          " If a file is changed outside of Vim reload it without asking
 
 set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
@@ -16,19 +13,13 @@ set cmdheight=1
 set scrolloff=3
 set wildmenu          " Visual autocomplete for command menu
 
-""
-"" Whitespace
-
+" Whitespace
 set nowrap                        " don't wrap lines
 set tabstop=2                     " a tab is two spaces
 set shiftwidth=2                  " an autoindent (with <<) is two spaces
 set expandtab                     " use spaces, not tabs
 set list                          " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
-
-if exists("g:enable_mvim_shift_arrow")
-  let macvim_hig_shift_movement = 1 " mvim shift-arrow-keys
-endif
 
 " List chars
 set listchars=""                  " Reset the listchars
@@ -76,18 +67,6 @@ set wildignore+=*.swp,*~,._*
 ""
 "" Backup and swap files
 ""
-
 set backupdir^=~/dotfiles/_backup//    " where to put backup files.
 set directory^=~/dotfiles/_temp//      " where to put swap files.
 set noswapfile
-
-
-" Remapping for CtrlP in macvim
-"if has("gui_running")
-  "macmenu &File.New\ Tab key=<D-S-t>
-"endif
-
-" Autosave when switching away from vim
-"if has("autocmd")
-  "au FocusLost * silent! wall
-"endif
