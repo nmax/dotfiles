@@ -9,4 +9,6 @@ set splitright
 set go-=L
 set go-=T
 
-colorscheme dracula
+"colorscheme dracula
+colorscheme gruvbox
+set bg=dark

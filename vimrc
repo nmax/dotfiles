@@ -5,6 +5,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim' " Plugin Manager
 
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+Plugin 'morhetz/gruvbox'
+
 Plugin 'scrooloose/nerdtree' " File Tree Browser
 Plugin 'benekastah/neomake'
 Plugin 'ctrlpvim/ctrlp.vim' " fuzzy finder
