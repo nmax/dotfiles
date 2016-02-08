@@ -22,6 +22,9 @@ imap <silent> <F4> <ESC>:set invpaste<CR>:set paste?<CR>
 " format the entire file
 nnoremap <leader>fef :normal! gg=G``<CR>
 
+" bind ag; mind the trailing space
+nnoremap <leader>T :Ag 
+
 " Clear hlsearch with <leader>hs
 nnoremap <leader>hs :nohl<CR>
 
