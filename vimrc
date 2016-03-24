@@ -29,10 +29,8 @@ call vundle#end()            " Required by Vundle
 
 filetype plugin indent on    " Required by Vundle 
 
-source ~/dotfiles/vim-settings/plugins.vim
 source ~/dotfiles/vim-settings/general.vim
 source ~/dotfiles/vim-settings/mappings.vim
-source ~/dotfiles/vim-settings/window.vim
 
 let &colorcolumn=join(range(81,999),",")
 
