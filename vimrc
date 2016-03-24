@@ -87,6 +87,8 @@ autocmd! BufWritePost * Neomake
 au BufReadPost *.hbs set syntax=mustache
 au BufReadPost *.rs set ft=rust
 
+" Copy to clippy 
+nnoremap <leader>y :call system('nc localhost 8377', @0)<CR>
 
 " Window Stufff
 
