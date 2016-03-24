@@ -70,3 +70,4 @@ set wildignore+=*.swp,*~,._*
 set backupdir^=~/dotfiles/_backup//    " where to put backup files.
 set directory^=~/dotfiles/_temp//      " where to put swap files.
 set noswapfile
+
