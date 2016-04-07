@@ -1,33 +1,34 @@
-set rtp+=~/.vim/bundle/Vundle.vim
-set rtp+=~/.fzf
+function! BuildYCM(info)
+  if a:info.status == 'installed' || a:info.force
+    !./install.py
+  endif
+endfunction
 
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-Plugin 'gmarik/Vundle.vim' " Plugin Manager
+Plug 'morhetz/gruvbox'
+Plug 'benekastah/neomake'
 
-Plugin 'morhetz/gruvbox'
-Plugin 'benekastah/neomake'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
 
-Plugin 'scrooloose/nerdtree' " File Tree Browser
-Plugin 'scrooloose/nerdcommenter' " For comments
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 
-Plugin 'junegunn/fzf.vim'
-Plugin 'Valloric/YouCompleteMe'
+Plug 'sheerun/vim-polyglot'
 
-Plugin 'sheerun/vim-polyglot'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-surround'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'justincampbell/vim-eighties'
+Plug 'christoomey/vim-tmux-navigator'
 
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-surround'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'justincampbell/vim-eighties'
-Plugin 'christoomey/vim-tmux-navigator'
+Plug 'benmills/vimux'
+Plug 'skalnik/vim-vroom',
 
-Plugin 'benmills/vimux'
-Plugin 'skalnik/vim-vroom',
-
-call vundle#end()            " Required by Vundle
-
-filetype plugin indent on    " Required by Vundle 
+" Add plugins to &runtimepath
+call plug#end()
 
 source ~/dotfiles/vim-settings/general.vim
 source ~/dotfiles/vim-settings/mappings.vim
@@ -70,6 +71,9 @@ let g:vroom_use_zeus = 1 " Always use zeus when it is running!
 
 " FZF
 nnoremap <C-P> :Files<CR>
+nnoremap <Leader>ff :Files<CR>
+nnoremap <Leader>fb :Buffers<CR>
+nnoremap <Leader>fl :Lines<CR>
 
 " NERDTree
 nnoremap <F5> :NERDTreeToggle<CR>
