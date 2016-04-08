@@ -38,9 +38,6 @@ let &colorcolumn=join(range(81,999),",")
 " add jbuilder syntax highlighting
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
-nnoremap <silent> <Leader>ag :Ag <C-R><C-W><CR>
-nnoremap <Leader>/ :Ag <CR>
-
 " ------ vimux -------
 " Prompt for a command to run in a tmux pane
 nmap <Leader>rc :wa<CR>:call OpenVimuxPrompt('v', '15')<CR>
@@ -68,12 +65,13 @@ let g:vroom_use_vimux = 1
 let g:vroom_use_bundle_exec = 1
 let g:vroom_use_zeus = 1 " Always use zeus when it is running!
 
-
 " FZF
 nnoremap <C-P> :Files<CR>
 nnoremap <Leader>ff :Files<CR>
-nnoremap <Leader>fb :Buffers<CR>
+nnoremap <Leader>bb :Buffers<CR>
 nnoremap <Leader>fl :Lines<CR>
+nnoremap <silent> <Leader>ag :Ag <C-R><C-W><CR>
+nnoremap <Leader>/ :Ag <CR>
 
 " NERDTree
 nnoremap <F5> :NERDTreeToggle<CR>
