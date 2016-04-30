@@ -10,7 +10,9 @@ Plug 'morhetz/gruvbox'
 Plug 'benekastah/neomake'
 
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
+
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -19,7 +21,6 @@ Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 Plug 'sheerun/vim-polyglot'
 
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-surround'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'justincampbell/vim-eighties'
 Plug 'christoomey/vim-tmux-navigator'
