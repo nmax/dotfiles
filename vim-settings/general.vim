@@ -1,6 +1,6 @@
 " Basics
 set nocompatible      " Use vim, no vi defaults
-set relativenumber    " Show line numbers
+set number            " Show line numbers
 set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
 set autoread          " If a file is changed outside of Vim reload it without asking
