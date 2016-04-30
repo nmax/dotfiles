@@ -3,7 +3,6 @@ set nocompatible      " Use vim, no vi defaults
 set relativenumber    " Show line numbers
 set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
-"set encoding=utf-8    " Set default encoding to UTF-8
 set autoread          " If a file is changed outside of Vim reload it without asking
 
 set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
@@ -15,9 +14,12 @@ set wildmenu          " Visual autocomplete for command menu
 
 " Whitespace
 set nowrap                        " don't wrap lines
-set tabstop=2                     " a tab is two spaces
-set shiftwidth=2                  " an autoindent (with <<) is two spaces
-set expandtab                     " use spaces, not tabs
+
+" This might no longer be needed
+" set tabstop=2                     " a tab is two spaces
+" set shiftwidth=2                  " an autoindent (with <<) is two spaces
+" set expandtab                     " use spaces, not tabs
+
 set list                          " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
 
@@ -69,5 +71,5 @@ set wildignore+=*.swp,*~,._*
 ""
 set backupdir^=~/dotfiles/_backup//    " where to put backup files.
 set directory^=~/dotfiles/_temp//      " where to put swap files.
-set noswapfile
+" set noswapfile
 
