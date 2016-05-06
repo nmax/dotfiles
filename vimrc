@@ -7,6 +7,7 @@ endfunction
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
+
 Plug 'benekastah/neomake'
 
 Plug 'scrooloose/nerdtree'
@@ -38,7 +39,10 @@ call plug#end()
 source ~/dotfiles/vim-settings/general.vim
 source ~/dotfiles/vim-settings/mappings.vim
 
-let &colorcolumn=join(range(81,999),",")
+
+set expandtab
+
+set cc=81
 
 " add jbuilder syntax highlighting
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
@@ -52,6 +56,8 @@ function! OpenVimuxPrompt(orientation, size)
   let g:VimuxHeight=a:size
   execute 'VimuxPromptCommand'
 endfunction
+
+let g:VimuxOrientation = "h"
 
 " Run last command executed by RunVimTmuxCommand
 nmap <Leader>rl :wa<CR>:VimuxRunLastCommand<CR>
@@ -74,7 +80,8 @@ let g:vroom_use_zeus = 1 " Always use zeus when it is running!
 nnoremap <C-P> :Files<CR>
 nnoremap <Leader>ff :Files<CR>
 nnoremap <Leader>bb :Buffers<CR>
-nnoremap <Leader>fl :Lines<CR>
+nnoremap <Leader>fl :BLines<CR>
+nnoremap <Leader>fL :Lines<CR>
 nnoremap <silent> <Leader>ag :Ag <C-R><C-W><CR>
 nnoremap <Leader>/ :Ag <CR>
 
@@ -109,6 +116,8 @@ set splitright
  "Removes left scrollbar in MacVim
 "set go-=L
 "set go-=T
+"
+nnoremap <Leader>B :bd
 
 colorscheme gruvbox
 set bg=dark
