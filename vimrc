@@ -15,6 +15,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-eunuch'
 
 Plug 'justinmk/vim-sneak'
 
@@ -44,8 +45,6 @@ set expandtab
 
 set cc=81
 
-" add jbuilder syntax highlighting
-au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
 " ------ vimux -------
 " Prompt for a command to run in a tmux pane
@@ -93,30 +92,23 @@ let g:neomake_javascript_jshint_maker = {
     \ 'args': ['--verbose'],
     \ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
     \ }
-let g:neomake_javascript_enabled_makers = ['jshint']
+let g:neomake_javascript_enabled_makers = ['jshint', 'coffeelint']
 autocmd! BufWritePost * Neomake
 
 
 " Misc
+" TODO: Still needed?
 au BufReadPost *.hbs set syntax=mustache
 au BufReadPost *.rs set ft=rust
+au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
 " Copy to clippy 
 nnoremap <leader>y :call system('nc localhost 8377', @0)<CR>
-
-" Window Stufff
-
-"set guifont=Source\ Code\ Pro\ 13
-set guifont=Hack\ 14
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
 
- "Removes left scrollbar in MacVim
-"set go-=L
-"set go-=T
-"
 nnoremap <Leader>B :bd
 
 colorscheme gruvbox

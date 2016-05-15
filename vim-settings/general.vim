@@ -1,6 +1,5 @@
 " Basics
-set nocompatible      " Use vim, no vi defaults
-set number            " Show line numbers
+set relativenumber    " Show line numbers
 set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
 set autoread          " If a file is changed outside of Vim reload it without asking
@@ -14,11 +13,6 @@ set wildmenu          " Visual autocomplete for command menu
 
 " Whitespace
 set nowrap                        " don't wrap lines
-
-" This might no longer be needed
-" set tabstop=2                     " a tab is two spaces
-" set shiftwidth=2                  " an autoindent (with <<) is two spaces
-" set expandtab                     " use spaces, not tabs
 
 set list                          " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
@@ -45,13 +39,9 @@ set smartcase   " ... unless they contain at least one capital letter
 "" Wild settings
 ""
 
-" TODO: Investigate the precise meaning of these settings
-" set wildmode=list:longest,list:full
-
-" Disable output and VCS files
 set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
 
-" Disable archive files
+" Ignore archive files
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
 
 " Ignore bundler and sass cache
@@ -63,7 +53,7 @@ set wildignore+=*/tmp/librarian/*,*/.vagrant/*,*/.kitchen/*,*/vendor/cookbooks/*
 " Ignore rails temporary asset caches
 set wildignore+=*/tmp/cache/assets/*/sprockets/*,*/tmp/cache/assets/*/sass/*
 
-" Disable temp and backup files
+" Ignore temp and backup files
 set wildignore+=*.swp,*~,._*
 
 ""
@@ -71,5 +61,5 @@ set wildignore+=*.swp,*~,._*
 ""
 set backupdir^=~/dotfiles/_backup//    " where to put backup files.
 set directory^=~/dotfiles/_temp//      " where to put swap files.
-" set noswapfile
+set noswapfile
 
