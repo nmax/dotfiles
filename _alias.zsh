@@ -13,4 +13,4 @@ alias bitbucket_review_url='echo $(bitbucket_repo_url)/branches/compare/$(branch
 alias vwc="cd /var/www/current"
 alias clip="nc localhost 8377"
 
-alias restart_nww="bundle install && rake assets:clear && rake tmp:clean && touch tmp/restart.txt"
+alias restart_nww="rake assets:clean && rake tmp:clear && touch tmp/restart.txt"
