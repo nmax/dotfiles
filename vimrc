@@ -34,6 +34,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'benmills/vimux'
 Plug 'skalnik/vim-vroom',
 
+Plug 'vim-scripts/BufOnly.vim'
+
 " Add plugins to &runtimepath
 call plug#end()
 
@@ -88,11 +90,11 @@ nnoremap <Leader>/ :Ag <CR>
 nnoremap <F5> :NERDTreeToggle<CR>
 
 " Neomake
-let g:neomake_javascript_jshint_maker = {
-    \ 'args': ['--verbose'],
-    \ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
-    \ }
-let g:neomake_javascript_enabled_makers = ['jshint', 'coffeelint']
+" let g:neomake_javascript_jshint_maker = {
+"     \ 'args': ['--verbose'],
+"     \ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
+"     \ }
+" let g:neomake_javascript_enabled_makers = ['jshint', 'coffeelint']
 autocmd! BufWritePost * Neomake
 
 
