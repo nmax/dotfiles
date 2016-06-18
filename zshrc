@@ -25,5 +25,6 @@ export KEYTIMEOUT=1
 
 source ~/dotfiles/_alias.zsh
 source ~/dotfiles/_functions.zsh
+source ~/.cargo/bin/
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

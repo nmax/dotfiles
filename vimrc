@@ -10,6 +10,8 @@ Plug 'morhetz/gruvbox'
 
 Plug 'benekastah/neomake'
 
+Plug 'rust-lang/rust.vim'
+
 Plug 'scrooloose/nerdtree'
 
 Plug 'tpope/vim-surround'
@@ -28,7 +30,7 @@ Plug 'sheerun/vim-polyglot'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'justincampbell/vim-eighties'
+" Plug 'justincampbell/vim-eighties'
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'benmills/vimux'
@@ -97,6 +99,7 @@ nnoremap <F5> :NERDTreeToggle<CR>
 " let g:neomake_javascript_enabled_makers = ['jshint', 'coffeelint']
 autocmd! BufWritePost * Neomake
 
+let g:rustfmt_autosave = 1
 
 " Misc
 " TODO: Still needed?
