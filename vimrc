@@ -37,6 +37,7 @@ Plug 'benmills/vimux'
 Plug 'skalnik/vim-vroom',
 
 Plug 'vim-scripts/BufOnly.vim'
+Plug 'rust-lang/rust.vim'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -49,6 +50,7 @@ set expandtab
 
 set cc=81
 
+let g:rustfmt_autosave = 1
 
 " ------ vimux -------
 " Prompt for a command to run in a tmux pane
@@ -104,7 +106,6 @@ let g:rustfmt_autosave = 1
 " Misc
 " TODO: Still needed?
 au BufReadPost *.hbs set syntax=mustache
-au BufReadPost *.rs set ft=rust
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
 " Copy to clippy 
@@ -115,6 +116,8 @@ set splitbelow
 set splitright
 
 nnoremap <Leader>B :bd<CR>
+nnoremap <Leader>n :bn<CR>
+nnoremap <Leader>p :bp<CR>
 
 colorscheme gruvbox
 set bg=dark
