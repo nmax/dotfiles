@@ -15,8 +15,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 export NVIM_DIR=${HOME}/.config/nvim
-export NVIM_TUI_ENABLE_TRUE_COLOR=1
-export FZF_DEFAULT_COMMAND='ag -l -g --hidden ""'
+export FZF_DEFAULT_COMMAND='ag -l'
 
 export PATH="/opt/cmake-3.4.0-Linux-x86_64/bin/:$PATH"
 

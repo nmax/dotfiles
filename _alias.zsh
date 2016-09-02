@@ -13,6 +13,7 @@ alias bitbucket_review_url='echo $(bitbucket_repo_url)/branches/compare/$(branch
 
 alias vwc="cd /var/www/current"
 alias clip="nc localhost 8377"
+alias undo_last_commit="git reset HEAD~1 --soft && git reset HEAD"
 
 alias mount_nww="sshfs mneger@nix-wie-weg.max.s5.nix-wie-weg.de:/var/www/current ~/nww_seite -o idmap=user -o uid=$(id -u) -o gid=$(id -g)"
 

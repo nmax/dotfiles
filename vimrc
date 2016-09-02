@@ -18,6 +18,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
 
 Plug 'justinmk/vim-sneak'
 
@@ -28,7 +29,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 
 Plug 'sheerun/vim-polyglot'
 
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
 " Plug 'justincampbell/vim-eighties'
 Plug 'christoomey/vim-tmux-navigator'
@@ -54,7 +55,7 @@ let g:rustfmt_autosave = 1
 
 " ------ vimux -------
 " Prompt for a command to run in a tmux pane
-nmap <Leader>rc :wa<CR>:call OpenVimuxPrompt('v', '15')<CR>
+nmap <Leader>rc :wa<CR>:call OpenVimuxPrompt('v', '30')<CR>
 nmap <Leader>rvc :wa<CR>:call OpenVimuxPrompt('h', '40')<CR>
 function! OpenVimuxPrompt(orientation, size)
   let g:VimuxOrientation=a:orientation
@@ -100,8 +101,6 @@ nnoremap <F5> :NERDTreeToggle<CR>
 "     \ }
 " let g:neomake_javascript_enabled_makers = ['jshint', 'coffeelint']
 autocmd! BufWritePost * Neomake
-
-let g:rustfmt_autosave = 1
 
 " Misc
 " TODO: Still needed?
