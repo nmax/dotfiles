@@ -2,5 +2,6 @@
 vim-plugins
 *.swp
 _backup
+.backup/
 _backup_dotfiles
 
