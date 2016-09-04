@@ -83,6 +83,7 @@ autocmd FileType ruby iab <buffer> vcr! VCR.record_this_example
 autocmd FileType ruby iab <buffer> screenshot! page.save_screenshot 'test.png', full: true
 
 " --- Theme ---
+set termguicolors
 colorscheme gruvbox
 set bg=dark
 
@@ -147,7 +148,6 @@ autocmd! BufWritePost * Neomake
 " --- Rust.vim ---
 let g:rustfmt_autosave = 1
 
->>>>>>> Cleanup
 au BufReadPost *.hbs set syntax=mustache
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 

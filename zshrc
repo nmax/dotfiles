@@ -14,8 +14,6 @@ source ~/dotfiles/_alias.zsh
 source ~/dotfiles/_functions.zsh
 source ~/.cargo/env
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # Load RVM into a shell session *as a function*
 if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then
   # First try to load from a user install
@@ -26,3 +24,6 @@ elif [[ -s "/usr/local/rvm/scripts/rvm" ]] ; then
 else
   printf "ERROR: An RVM installation was not found.\n"
 fi
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

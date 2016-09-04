@@ -1,6 +1,8 @@
 set fish_key_bindings fish_vi_key_bindings
 set -x EDITOR nvim
-set fish_user_paths "/usr/local/bin"
+
+set PATH ~/.cargo/bin $PATH
+set PATH ~/.rvm/bin $PATH
 
 set fish_user_abbreviations
 function abbr_add
@@ -9,6 +11,10 @@ end
 
 alias vim "nvim"
 alias vi "nvim"
+
+for file in (ls ~/dotfiles/fish/functions/eager)
+  source ~/dotfiles/fish/functions/eager/$file
+end
 
 set LANG de_DE.UTF-8
 

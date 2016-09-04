@@ -27,11 +27,18 @@ if [ -e "$HOME/.config/nvim" ]; then
   mv "$HOME/.config/nvim" $BACKUP_DIR
 fi
 
+if [ -e "$HOME/.config/nvim" ]; then
+  echo "backup of fish"
+  mv "$HOME/.config/fish/" $BACKUP_DIR
+fi
+
 ln -s "$HOME/dotfiles/zshrc" "$HOME/.zshrc"
 ln -s "$HOME/dotfiles/tmux.conf" "$HOME/.tmux.conf"
 
 mkdir -p "$HOME/.config/nvim"
 ln -s "$HOME/dotfiles/vimrc" "$HOME/.config/nvim/init.vim"
+
+ln -s "$HOME/dotfiles/fish/" "$HOME/.config/fish"
 
 if ! [ -e "$HOME/.config/nvim/autoload/plug.vim" ]; then
   curl -fLo "$HOME/.config/nvim/autoload/plug.vim" --create-dirs \
