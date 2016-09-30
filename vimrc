@@ -1,9 +1,3 @@
-function! BuildYCM(info)
-  if a:info.status == 'installed' || a:info.force
-    !./install.py
-  endif
-endfunction
-
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
@@ -11,33 +5,32 @@ Plug 'morhetz/gruvbox'
 Plug 'benekastah/neomake'
 
 Plug 'rust-lang/rust.vim'
-
 Plug 'scrooloose/nerdtree'
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-eunuch'
+Plug 'bronson/vim-visual-star-search'
+
 
 Plug 'justinmk/vim-sneak'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
-Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
+Plug 'Shougo/deoplete.nvim'
 
 Plug 'sheerun/vim-polyglot'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
-" Plug 'justincampbell/vim-eighties'
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'benmills/vimux'
 Plug 'skalnik/vim-vroom',
 
 Plug 'vim-scripts/BufOnly.vim'
-Plug 'rust-lang/rust.vim'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -46,11 +39,18 @@ source ~/dotfiles/vim-settings/general.vim
 source ~/dotfiles/vim-settings/mappings.vim
 
 
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+
 set expandtab
 
 set cc=81
 
 let g:rustfmt_autosave = 1
+
+function! FormatJSON()
+:%!python -m json.tool
+endfunction
 
 " ------ vimux -------
 " Prompt for a command to run in a tmux pane
@@ -115,9 +115,15 @@ nnoremap <leader>y :call system('nc localhost 8377', @0)<CR>
 set splitbelow
 set splitright
 
-nnoremap <Leader>B :bd<CR>
+nnoremap <Leader>q :bd<CR>
 nnoremap <Leader>n :bn<CR>
 nnoremap <Leader>p :bp<CR>
+
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set smarttab
+set expandtab
 
 colorscheme gruvbox
 set bg=dark
