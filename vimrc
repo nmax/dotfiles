@@ -13,7 +13,6 @@ Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-eunuch'
 Plug 'bronson/vim-visual-star-search'
 
-
 Plug 'justinmk/vim-sneak'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -23,7 +22,7 @@ Plug 'Shougo/deoplete.nvim'
 
 Plug 'sheerun/vim-polyglot'
 
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'christoomey/vim-tmux-navigator'
 
@@ -54,7 +53,7 @@ endfunction
 
 " ------ vimux -------
 " Prompt for a command to run in a tmux pane
-nmap <Leader>rc :wa<CR>:call OpenVimuxPrompt('v', '15')<CR>
+nmap <Leader>rc :wa<CR>:call OpenVimuxPrompt('v', '30')<CR>
 nmap <Leader>rvc :wa<CR>:call OpenVimuxPrompt('h', '40')<CR>
 function! OpenVimuxPrompt(orientation, size)
   let g:VimuxOrientation=a:orientation
@@ -101,8 +100,6 @@ nnoremap <F5> :NERDTreeToggle<CR>
 " let g:neomake_javascript_enabled_makers = ['jshint', 'coffeelint']
 autocmd! BufWritePost * Neomake
 
-let g:rustfmt_autosave = 1
-
 " Misc
 " TODO: Still needed?
 au BufReadPost *.hbs set syntax=mustache
@@ -119,11 +116,12 @@ nnoremap <Leader>q :bd<CR>
 nnoremap <Leader>n :bn<CR>
 nnoremap <Leader>p :bp<CR>
 
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set smarttab
-set expandtab
+" TODO: vim-sleuth?
+" set tabstop=2
+" set shiftwidth=2
+" set softtabstop=2
+" set smarttab
+" set expandtab
 
 colorscheme gruvbox
 set bg=dark
