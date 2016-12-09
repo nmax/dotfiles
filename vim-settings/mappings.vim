@@ -19,6 +19,8 @@ nnoremap * *N
 nmap <silent> <F4> :set invpaste<CR>:set paste?<CR>
 imap <silent> <F4> <ESC>:set invpaste<CR>:set paste?<CR>
 
+nnoremap K=kJ
+
 " format the entire file
 nnoremap <leader>fef :normal! gg=G``<CR>
 
