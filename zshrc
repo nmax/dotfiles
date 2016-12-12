@@ -24,6 +24,11 @@ export KEYTIMEOUT=1
 
 source ~/dotfiles/_alias.zsh
 source ~/dotfiles/_functions.zsh
-source ~/.cargo/env
+# source ~/.cargo/env
+
+# User Name,Access Key Id,Secret Access Key
+# "max.neger",AKIAJL5JYM2A6XWRW7NQ,JACW9KioIte8Eu1DW3SoCOXKRwnEJhfhIJz+T8Ac
+export AWS_ACCESS_KEY_ID="AKIAJL5JYM2A6XWRW7NQ"
+export AWS_SECRET_ACCESS_KEY="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"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

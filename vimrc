@@ -7,6 +7,7 @@ Plug 'benekastah/neomake'
 Plug 'rust-lang/rust.vim'
 " Plug 'scrooloose/nerdtree'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'justinmk/vim-dirvish'
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
@@ -21,7 +22,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'jgdavey/vim-blockle', { 'for': 'ruby' }
 
-Plug 'Valloric/YouCompleteMe'
+Plug 'Shougo/deoplete.nvim'
+" Plug 'Valloric/YouCompleteMe'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 
 Plug 'sheerun/vim-polyglot'
@@ -39,6 +41,13 @@ call plug#end()
 
 source ~/dotfiles/vim-settings/general.vim
 source ~/dotfiles/vim-settings/mappings.vim
+
+set termguicolors
+
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+
+set expandtab
 
 set cc=81
 set inccommand=nosplit
