@@ -19,3 +19,5 @@ alias mount_nww="sshfs mneger@nix-wie-weg.max.s5.nix-wie-weg.de:/var/www/current
 alias mount_nww_home="sshfs mneger@nix-wie-weg.max.s5.nix-wie-weg.de:/home/mneger ~/nww_home -o idmap=user -o uid=$(id -u) -o gid=$(id -g)"
 
 alias restart_nww="rake assets:clean && rake tmp:clear && touch tmp/restart.txt"
+alias cp_last_commit="git rev-parse HEAD | clip"
+

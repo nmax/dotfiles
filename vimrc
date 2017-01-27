@@ -1,12 +1,13 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
+" Plug 'mhartington/oceanic-next'
 
 Plug 'benekastah/neomake'
 
 Plug 'rust-lang/rust.vim'
 " Plug 'scrooloose/nerdtree'
-Plug 'ludovicchabant/vim-gutentags'
+" Plug 'ludovicchabant/vim-gutentags'
 Plug 'justinmk/vim-dirvish'
 
 Plug 'tpope/vim-surround'
@@ -43,6 +44,9 @@ source ~/dotfiles/vim-settings/general.vim
 source ~/dotfiles/vim-settings/mappings.vim
 
 set termguicolors
+
+autocmd FileType ruby iab <buffer> pry! require 'pry'; binding.pry
+autocmd FileType ruby iab <buffer> vcr! VCR.record_this_example
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
