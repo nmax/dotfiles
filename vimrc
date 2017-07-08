@@ -32,19 +32,29 @@ set splitright
 set cc=81
 let mapleader = "\<Space>"
 
+xnoremap * :<C-u>call <SID>VSetSearch()<CR>/<C-R>=@/<CR><CR>
+xnoremap ö :<C-u>call <SID>VSetSearch()<CR>?<C-R>=@/<CR><CR>
+
+function! s:VSetSearch()
+  let tmep = @s
+  norm! gv"sy
+  let @/ = '\V' . substitute(escape(@s, '/\'), '\n', '\\n', 'g')
+endfunction
+
+
 " --- Whitespace ---
-set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set smarttab
 set expandtab
 set nowrap " Don't wrap lines
-set list " Show invisible characters
 set backspace=indent,eol,start " backspace through everything in insert mode
 
+
+
 " --- List chars ---
-set listchars="" " Reset the listchars
-set listchars=tab:\ \  " a tab should display as "  ", trailing whitespace as "."
+set list " Show invisible characters
+set listchars=tab:▸\
 set listchars+=trail:. " show trailing spaces as dots
 set listchars+=extends:> " The character to show in the last column when wrap
                          " is off and the line continues beyond the right of
@@ -78,14 +88,16 @@ set directory^=~/dotfiles/_temp//      " where to put swap files.
 set noswapfile
 
 " --- Abbreviations ----
-autocmd FileType ruby iab <buffer> pry! require 'pry'; binding.pry
-autocmd FileType ruby iab <buffer> vcr! VCR.record_this_example
-autocmd FileType ruby iab <buffer> screenshot! page.save_screenshot 'test.png', full: true
+augroup filetype_ruby
+  autocmd!
+  autocmd FileType ruby iab <buffer> pry! require 'pry'; binding.pry
+  autocmd FileType ruby  iab <buffer> vcr! VCR.record_this_example
+  autocmd FileType ruby  iab <buffer> screenshot! page.save_screenshot 'test.png', full: true
+augroup END
 
 " --- Theme ---
 set termguicolors
 colorscheme gruvbox
-set bg=dark
 
 " --- Airline ---
 let g:airline#extensions#tabline#enabled = 1

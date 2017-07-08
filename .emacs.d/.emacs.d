@@ -1,1 +1,0 @@
-/Users/maximilianneger/.emacs.d
