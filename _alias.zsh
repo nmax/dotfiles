@@ -5,7 +5,7 @@ alias redmine_url='echo http://redmine.nwwo.de/issues/$(branch_current | grep -o
 alias branch_oldest_ancestor='/usr/bin/diff -u <(git rev-list --first-parent master) <(git rev-list --first-parent HEAD) | sed -ne "s/^ //p" | head -1'
 alias branch_current='git rev-parse --abbrev-ref HEAD'
 alias branch_files='git diff $(branch_oldest_ancestor)..HEAD --diff-filter=ACMR --name-only --oneline'
-alias branch_rubocop='branch_files | grep  "\.\(rb\|gemspec\)$" | xargs rubocop'
+alias branch_rubocop='branch_files | grep  "\.\(rb\|gemspec\)$" | xargs bundle exec rubocop --force-exclusion'
 alias connect_dev_vm="ssh nix-wie-weg.max.s5.nix-wie-weg.de"
 
 alias bitbucket_repo_url='echo https://$(git remote -v | grep -oh "bitbucket.org[:/][^ ]\+.git" | head -1 | sed "s/:/\//" | sed "s/\.git$//")'
@@ -18,4 +18,9 @@ alias undo_last_commit="git reset HEAD~1 --soft && git reset HEAD"
 alias mount_nww="sshfs mneger@nix-wie-weg.max.s5.nix-wie-weg.de:/var/www/current ~/nww_seite -o idmap=user -o uid=$(id -u) -o gid=$(id -g)"
 alias mount_nww_home="sshfs mneger@nix-wie-weg.max.s5.nix-wie-weg.de:/home/mneger ~/nww_home -o idmap=user -o uid=$(id -u) -o gid=$(id -g)"
 
-alias restart_nww="rake assets:clean && rake tmp:clear && touch tmp/restart.txt"
+alias restart_nww="bundle exec rake assets:clean && bundle exec rake tmp:clear && touch tmp/restart.txt"
+
+alias brc="bitbucket_review_url | clip"
+alias cp_last_commit="git rev-parse HEAD | clip"
+alias todos="ag \"TODO(?! Prio [23])\""
+alias zeus="bundle exec zeus"

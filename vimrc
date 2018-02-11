@@ -1,53 +1,172 @@
 call plug#begin('~/.vim/plugged')
-
-Plug 'morhetz/gruvbox'
-
-Plug 'benekastah/neomake'
-
-Plug 'rust-lang/rust.vim'
-" Plug 'scrooloose/nerdtree'
-Plug 'ludovicchabant/vim-gutentags'
-
+Plug 'cocopon/iceberg.vim'
+Plug 'romainl/vim-qf'
+Plug 'romainl/vim-cool'
+Plug 'w0rp/ale'
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-eunuch'
-Plug 'bronson/vim-visual-star-search'
-
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'justinmk/vim-sneak'
 Plug 'justinmk/vim-dirvish'
-
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'jgdavey/vim-blockle', { 'for': 'ruby' }
-
-Plug 'Valloric/YouCompleteMe'
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'tmux-plugins/vim-tmux-focus-events'
-
 Plug 'sheerun/vim-polyglot'
-
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'christoomey/vim-tmux-navigator'
-
 Plug 'benmills/vimux'
 Plug 'skalnik/vim-vroom',
-
-Plug 'vim-scripts/BufOnly.vim'
-
-" Add plugins to &runtimepath
 call plug#end()
 
-source ~/dotfiles/vim-settings/general.vim
-source ~/dotfiles/vim-settings/mappings.vim
-
+syntax enable
+set relativenumber
+set autoread " If a file is changed outside of Vim reload it without asking
+set statusline=%<\%f\ %m%r%y%w%=%l\/%-L\ %3c
+set laststatus=2
+set cursorline
+set cmdheight=1
+set scrolloff=3
+set nowrap
+set splitbelow
+set splitright
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set smarttab
+set expandtab
+set termguicolors
+set hlsearch
+set incsearch
+set ignorecase  " searches are case insensitive...
+set smartcase   " ... unless they contain at least one capital letter
+set infercase
+set list                          " Show invisible characters
+set backspace=indent,eol,start    " backspace through everything in insert mode
+set listchars=""                  " Reset the listchars
+set listchars=tab:\ \             " a tab should display as "  ", trailing whitespace as "."
+set listchars+=trail:.            " show trailing spaces as dots
+set listchars+=extends:>          " The character to show in the last column when wrap is
+                                  " off and the line continues beyond the right of the screen
+set listchars+=precedes:<         " The character to show in the last column when wrap is
+                                  " off and the line continues beyond the left of the screen
+set hidden
 set cc=81
 set inccommand=nosplit
+set pumheight=15
 
-set autoread
+
+set wildmenu
+set wildmode=list:full
+set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
+set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
+set wildignore+=*/tmp/librarian/*,*/.vagrant/*,*/.kitchen/*,*/vendor/cookbooks/*
+set wildignore+=*/tmp/cache/assets/*/sprockets/*,*/tmp/cache/assets/*/sass/*
+set wildignore+=*.swp,*~,._*
+
+set backupdir^=~/dotfiles/_backup//    " where to put backup files.
+set directory^=~/dotfiles/_temp//      " where to put swap files.
+
+let mapleader = "\<Space>"
+nnoremap <leader>y :call system('nc localhost 8377', @0)<CR>
+nnoremap <Leader>q :bp<CR>:bd #<CR>
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+nnoremap Q q
+nnoremap * *N
+nmap <silent> <F4> :set invpaste<CR>:set paste?<CR>
+imap <silent> <F4> <ESC>:set invpaste<CR>:set paste?<CR>
+nnoremap K kJ
+nnoremap <leader>hs :nohl<CR>
+nnoremap <leader>k V:move '<-2<CR><Esc>
+nnoremap <leader>j V:move '>+1<CR><Esc>
+vnoremap <leader>k :move '<-2<CR>gv
+vnoremap <leader>j :move '>+1<CR>gv
+tnoremap <leader><Esc> <C-\><C-n>
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h') . '/' : '%%'
+" nmap ö <C-]>zz
+noremap <bs> <C-^>
+nnoremap <space><space> :silent grep <C-R><C-W>
+
+
+" TODO: PgUP/PgDown/Home/End?
+nmap <F1> <Plug>qf_qf_previous
+nmap <F2> <Plug>qf_qf_next
+nmap <F3> <Plug>qf_qf_stay_toggle
+nmap ¡ <Plug>qf_loc_previous
+nmap “ <Plug>qf_loc_next
+nmap ¶ <Plug>qf_loc_stay_toggle
+
+let g:ale_ruby_rubocop_executable = "bundle"
+let g:ale_open_list = 0
+let g:lint_on_text_changed = 'never'
+let g:qf_statusline = {}
+let g:qf_statusline.before = '%<\ '
+let g:qf_statusline.after = '\ %f%=%l\/%-6L\ \ \ \ \ '
+
+augroup mkdir
+  autocmd!
+  if exists("*mkdir") "auto-create directories for new files
+    au BufWritePre,FileWritePre * silent! call mkdir(expand('<afile>:p:h'), 'p')
+  endif
+augroup END
+
+augroup bitbucket
+  autocmd!
+
+  function! InsertTicketNumer()
+    .!git symbolic-ref --short HEAD
+    normal I#
+    normal 2wD
+    normal A: 
+  endfunction
+
+  function! BitbucketFileLink()
+    let base = "https://bitbucket.org/nix-wie-weg"
+    let project = system("git remote -v | head -n1 | awk \'{print $2}\' | sed 's/.*\\///' | sed 's/\\.git//'")
+    let git_head = system("git rev-parse HEAD")
+    let file_path = expand("%:f")
+    let branch = system("git rev-parse --abbrev-ref HEAD")
+    let fileviewer = "file-view-default"
+    let file_with_line = expand("%:t") . "-" . line(".")
+    let url = base . "/" . project . "/src/" . git_head . "/" . file_path .  "?at=" . branch . "&fileviewer=file-view-default#" . file_with_line
+    call append(line("."), substitute(url, '\n', '', 'g'))
+    normal jviW
+    echom "Bitbucket-Link erzeugt!"
+  endfunction
+
+  autocmd FileType gitcommit call InsertTicketNumer()
+  command! BBLink :call BitbucketFileLink()
+augroup END
+
+" function! s:VisualStarSearch()
+"   let temp = @s
+"   norm! gv"sy
+"   let @/ = '\V' . substitute(escape(@s, '/\'), '\n', '\\n', 'g')
+"   let @s = temp
+" endfunction
+" noremap * :<C-u>call <SID>VisualStarSearch()<CR>/<C-R>=@/<CR><CR>
+
+autocmd FileType ruby iab <buffer> pry! require 'pry'; binding.pry
+autocmd FileType ruby iab <buffer> vcr! VCR.record_this_example
+
+
+" set autoread
 let g:rustfmt_autosave = 1
 
+function! FormatXML()
+  :%!xmllint --format -
+endfunction
+
 function! FormatJSON()
-:%!python -m json.tool
+  :%!python -m json.tool
 endfunction
 
 " --- blockle ---
@@ -65,25 +184,18 @@ endfunction
 
 let g:VimuxOrientation = "h"
 
-" Run last command executed by RunVimTmuxCommand
 nmap <Leader>rl :wa<CR>:VimuxRunLastCommand<CR>
-
-" Inspect runner pane
 nmap <Leader>ri :VimuxInspectRunner<CR>
-
-" Close all other tmux panes in current window
 nmap <Leader>rx :VimuxCloseRunner<CR>
-
-" Zoom runner pane
 nmap <Leader>rz :VimuxZoomRunner<CR>
 
 " ---- vim-vroom settings ----
 let g:vroom_use_vimux = 1
-let g:vroom_use_bundle_exec = 1
 let g:vroom_use_zeus = 1 " Always use zeus when it is running!
 
 " FZF
 nnoremap <C-P> :Files<CR>
+nnoremap <Leader>tt :Tags<CR>
 nnoremap <Leader>ff :Files<CR>
 nnoremap <Leader>bb :Buffers<CR>
 nnoremap <Leader>fl :BLines<CR>
@@ -91,40 +203,16 @@ nnoremap <Leader>fL :Lines<CR>
 nnoremap <silent> <Leader>ag :Ag <C-R><C-W><CR>
 nnoremap <Leader>/ :Ag <CR>
 
-" NERDTree
-" TODO
-" nnoremap <F5> :NERDTreeToggle<CR>
+if executable('ag')
+  set grepprg=ag\ --nogroup\ --nocolor
+endif
 
-" Neomake
-" TODO
-" let g:neomake_javascript_jshint_maker = {
-"     \ 'args': ['--verbose'],
-"     \ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
-"     \ }
-" let g:neomake_javascript_enabled_makers = ['jshint', 'coffeelint']
-autocmd! BufWritePost * Neomake
+if executable('rg')
+  set grepprg=rg\ --vimgrep
+  set grepformat^=%f:%l:%c:%m
+endif
 
-" Misc
-" TODO: Still needed?
 au BufReadPost *.hbs set syntax=mustache
-au BufNewFile,BufRead *.json.jbuilder set ft=ruby
+au BufNewFile,BufRead *.json.jbuilder,*.god set ft=ruby
 
-" Copy to clippy
-nnoremap <leader>y :call system('nc localhost 8377', @0)<CR>
-
-" Open new split panes to right and bottom, which feels more natural
-set splitbelow
-set splitright
-
-nnoremap <Leader>q :bd<CR>
-
-" TODO: vim-sleuth?
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set smarttab
-set expandtab
-
-colorscheme gruvbox
-set termguicolors
-set bg=dark
+colorscheme iceberg

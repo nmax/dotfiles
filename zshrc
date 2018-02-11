@@ -10,6 +10,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+alias aba_i_bims='sudo $(history -p !!)'
+
 export BUNDLER_EDITOR="nvim"
 export EDITOR="nvim"
 export VISUAL="nvim"
