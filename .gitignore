@@ -2,4 +2,4 @@
 vim-plugins
 *.swp
 _backup
-
+_local.zsh

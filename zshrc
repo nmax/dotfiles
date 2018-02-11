@@ -19,13 +19,14 @@ export VISUAL="nvim"
 export NVIM_DIR=${HOME}/.config/nvim
 export FZF_DEFAULT_COMMAND='ag -l'
 
-export PATH="/opt/cmake-3.4.0-Linux-x86_64/bin/:$PATH"
+# export PATH="/opt/cmake-3.4.0-Linux-x86_64/bin/:$PATH"
 
 bindkey -v
 export KEYTIMEOUT=1
 
 source ~/dotfiles/_alias.zsh
 source ~/dotfiles/_functions.zsh
+source ~/dotfiles/_local.zsh
 source ~/.cargo/env
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
