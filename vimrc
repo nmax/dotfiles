@@ -28,7 +28,6 @@ set relativenumber
 set autoread " If a file is changed outside of Vim reload it without asking
 set statusline=%<\%f\ %m%r%y%w%=%l\/%-L\ %3c
 set laststatus=2
-set cursorline
 set cmdheight=1
 set scrolloff=3
 set nowrap
@@ -69,8 +68,9 @@ set wildignore+=*/tmp/librarian/*,*/.vagrant/*,*/.kitchen/*,*/vendor/cookbooks/*
 set wildignore+=*/tmp/cache/assets/*/sprockets/*,*/tmp/cache/assets/*/sass/*
 set wildignore+=*.swp,*~,._*
 
-set backupdir^=~/dotfiles/_backup//    " where to put backup files.
-set directory^=~/dotfiles/_temp//      " where to put swap files.
+set nobackup
+set noswapfile
+set undofile
 
 let mapleader = "\<Space>"
 nnoremap <leader>y :call system('nc localhost 8377', @0)<CR>
