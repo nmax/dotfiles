@@ -1,7 +1,9 @@
 call plug#begin('~/.vim/plugged')
+Plug 'machakann/vim-highlightedyank'
 Plug 'cocopon/iceberg.vim'
 Plug 'romainl/vim-qf'
 Plug 'romainl/vim-cool'
+Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
 Plug 'w0rp/ale'
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'tpope/vim-surround'
@@ -94,7 +96,7 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h') . '/' : '%%'
 " nmap ö <C-]>zz
 noremap <bs> <C-^>
 nnoremap <space><space> :silent grep <C-R><C-W>
-
+tnoremap *<Esc> <C-\><C-n>
 
 " TODO: PgUP/PgDown/Home/End?
 nmap <F1> <Plug>qf_qf_previous
@@ -211,6 +213,8 @@ if executable('rg')
   set grepprg=rg\ --vimgrep
   set grepformat^=%f:%l:%c:%m
 endif
+
+let g:highlightedyank_highlight_duration = 300
 
 au BufReadPost *.hbs set syntax=mustache
 au BufNewFile,BufRead *.json.jbuilder,*.god set ft=ruby

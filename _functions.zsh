@@ -16,9 +16,14 @@ fancy-ctrl-z () {
   fi
 }
 
-cook_and_clean () {
-  bundle exec knife solo cook $(echo $0) --no-chef-check -W && bundle exec knife solo clean $(echo $0) --no--chef-check
+chef_cook() {
+    bundle exec knife solo cook $1
 }
+
+chef_prep() {
+    bundle exec knife solo cook $1 -W
+}
+
 
 bindkey '^Z' fancy-ctrl-z
 zle -N fancy-ctrl-z
