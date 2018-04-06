@@ -59,6 +59,7 @@ set hidden
 set cc=81
 set inccommand=nosplit
 set pumheight=15
+set completeopt+=longest
 
 
 set wildmenu
@@ -97,6 +98,7 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h') . '/' : '%%'
 noremap <bs> <C-^>
 nnoremap <space><space> :silent grep <C-R><C-W>
 tnoremap *<Esc> <C-\><C-n>
+nnoremap g; g;zz
 
 " TODO: PgUP/PgDown/Home/End?
 nmap <F1> <Plug>qf_qf_previous

@@ -1,0 +1,35 @@
+[user]
+  name = Maximilian Neger
+  email = maximilian.neger@nix-wie-weg.de
+[alias]
+  oldest-ancestor = !zsh -c 'diff -u <(git rev-list --first-parent \"${1:-master}\") <(git rev-list --first-parent \"${2:-HEAD}\") | sed -ne \"s/^ //p\" | head -1' -
+  lg = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  clip-last = rev-list HEAD | clip
+  co = checkout
+  dad = !curl https://icanhazdadjoke.com/ && git add
+  mdiff = diff --color-moved
+  mshow = show --color-moved
+  mlog = log --patch --color-moved
+[core]
+  commentchar = >
+  excludesfile = /Users/mneger/.gitignore_global
+  autocrlf = input
+  safecrlf = true
+  editor = "nvim"
+[color]
+  ui = true
+[push]
+  default = simple
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+[pager]
+  diff = diff-so-fancy | less --tabs=4 -RFX
+  show = diff-so-fancy | less --tabs=4 -RFX
+[merge]
+  tool = opendiff
