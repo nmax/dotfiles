@@ -65,14 +65,15 @@ set wildmenu
 set wildmode=list:full
 set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
-set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
-set wildignore+=*/tmp/librarian/*,*/.vagrant/*,*/.kitchen/*,*/vendor/cookbooks/*
+set wildignore+=./vendor/**/*,*/vendor/**/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
+set wildignore+=./tmp/**/*,*/tmp/librarian/*,*/.vagrant/*,*/.kitchen/*,*/vendor/cookbooks/*
 set wildignore+=*/tmp/cache/assets/*/sprockets/*,*/tmp/cache/assets/*/sass/*
 set wildignore+=*.swp,*~,._*
 
 set nobackup
 set noswapfile
 set undofile
+set path=**
 
 let mapleader = "\<Space>"
 nnoremap <leader>y :call system('nc localhost 8377', @0)<CR>
@@ -94,6 +95,7 @@ vnoremap <leader>j :move '>+1<CR>gv
 tnoremap <leader><Esc> <C-\><C-n>
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h') . '/' : '%%'
 " nmap ö <C-]>zz
+nnoremap g; g;zz
 noremap <bs> <C-^>
 nnoremap <space><space> :silent grep <C-R><C-W>
 tnoremap *<Esc> <C-\><C-n>

@@ -1,0 +1,735 @@
+
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim)
+chdir(/home/mneger/dotfiles)
+"$VIM/sysinit.vim" konnte nicht ausgeführt werden
+chdir(/home/mneger/dotfiles)
+chdir(/home/mneger/.config/nvim)
+chdir(/home/mneger/dotfiles)
+führe "/home/mneger/.config/nvim/init.vim" aus
+Suche nach "autoload/plug.vim" in "/home/mneger/.config/nvim,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/autoload/plug.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/home/mneger/.config/nvim/autoload)
+chdir(/home/mneger/dotfiles)
+Zeile 1: führe "/home/mneger/.config/nvim/autoload/plug.vim" aus
+Ausführen von /home/mneger/.config/nvim/autoload/plug.vim beendet
+weiter in /home/mneger/.config/nvim/init.vim
+Suche nach "filetype.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/filetype.vim"
+Suche nach "/home/mneger/.fzf/filetype.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/filetype.vim"
+Suche nach "/etc/xdg/nvim/filetype.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/filetype.vim"
+Suche nach "/usr/local/share/nvim/site/filetype.vim"
+Suche nach "/usr/share/nvim/site/filetype.vim"
+Suche nach "/usr/share/nvim/runtime/filetype.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime)
+chdir(/home/mneger/dotfiles)
+Zeile 83: führe "/usr/share/nvim/runtime/filetype.vim" aus
+Suche nach "ftdetect/*.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/ftdetect/*.vim"
+Suche nach "/home/mneger/.fzf/ftdetect/*.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/ftdetect/*.vim"
+Suche nach "/etc/xdg/nvim/ftdetect/*.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/ftdetect/*.vim"
+Suche nach "/usr/local/share/nvim/site/ftdetect/*.vim"
+Suche nach "/usr/share/nvim/site/ftdetect/*.vim"
+Suche nach "/usr/share/nvim/runtime/ftdetect/*.vim"
+Suche nach "/usr/share/nvim/site/after/ftdetect/*.vim"
+Suche nach "/usr/local/share/nvim/site/after/ftdetect/*.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/ftdetect/*.vim"
+Suche nach "/etc/xdg/nvim/after/ftdetect/*.vim"
+Suche nach "/home/mneger/.config/nvim/after/ftdetect/*.vim"
+not found in 'runtimepath': "ftdetect/*.vim"
+Ausführen von /usr/share/nvim/runtime/filetype.vim beendet
+weiter in function plug#end
+Suche nach "/usr/share/nvim/site/after/filetype.vim"
+Suche nach "/usr/local/share/nvim/site/after/filetype.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/filetype.vim"
+Suche nach "/etc/xdg/nvim/after/filetype.vim"
+Suche nach "/home/mneger/.config/nvim/after/filetype.vim"
+Suche nach "ftplugin.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/ftplugin.vim"
+Suche nach "/home/mneger/.fzf/ftplugin.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/ftplugin.vim"
+Suche nach "/etc/xdg/nvim/ftplugin.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/ftplugin.vim"
+Suche nach "/usr/local/share/nvim/site/ftplugin.vim"
+Suche nach "/usr/share/nvim/site/ftplugin.vim"
+Suche nach "/usr/share/nvim/runtime/ftplugin.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime)
+chdir(/home/mneger/dotfiles)
+Zeile 83: führe "/usr/share/nvim/runtime/ftplugin.vim" aus
+Ausführen von /usr/share/nvim/runtime/ftplugin.vim beendet
+weiter in function plug#end
+Suche nach "/usr/share/nvim/site/after/ftplugin.vim"
+Suche nach "/usr/local/share/nvim/site/after/ftplugin.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/ftplugin.vim"
+Suche nach "/etc/xdg/nvim/after/ftplugin.vim"
+Suche nach "/home/mneger/.config/nvim/after/ftplugin.vim"
+Suche nach "indent.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/indent.vim"
+Suche nach "/home/mneger/.fzf/indent.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/indent.vim"
+Suche nach "/etc/xdg/nvim/indent.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/indent.vim"
+Suche nach "/usr/local/share/nvim/site/indent.vim"
+Suche nach "/usr/share/nvim/site/indent.vim"
+Suche nach "/usr/share/nvim/runtime/indent.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime)
+chdir(/home/mneger/dotfiles)
+Zeile 83: führe "/usr/share/nvim/runtime/indent.vim" aus
+Ausführen von /usr/share/nvim/runtime/indent.vim beendet
+weiter in function plug#end
+Suche nach "/usr/share/nvim/site/after/indent.vim"
+Suche nach "/usr/local/share/nvim/site/after/indent.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/indent.vim"
+Suche nach "/etc/xdg/nvim/after/indent.vim"
+Suche nach "/home/mneger/.config/nvim/after/indent.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/syntax)
+chdir(/home/mneger/dotfiles)
+Zeile 86: führe "/usr/share/nvim/runtime/syntax/syntax.vim" aus
+Suche nach "syntax/synload.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/syntax/synload.vim"
+Suche nach "/home/mneger/.fzf/syntax/synload.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/syntax/synload.vim"
+Suche nach "/etc/xdg/nvim/syntax/synload.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/syntax/synload.vim"
+Suche nach "/usr/local/share/nvim/site/syntax/synload.vim"
+Suche nach "/usr/share/nvim/site/syntax/synload.vim"
+Suche nach "/usr/share/nvim/runtime/syntax/synload.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/syntax)
+chdir(/home/mneger/dotfiles)
+Zeile 19: führe "/usr/share/nvim/runtime/syntax/synload.vim" aus
+Suche nach "syntax/syncolor.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/syntax/syncolor.vim"
+Suche nach "/home/mneger/.fzf/syntax/syncolor.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/syntax/syncolor.vim"
+Suche nach "/etc/xdg/nvim/syntax/syncolor.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/syntax/syncolor.vim"
+Suche nach "/usr/local/share/nvim/site/syntax/syncolor.vim"
+Suche nach "/usr/share/nvim/site/syntax/syncolor.vim"
+Suche nach "/usr/share/nvim/runtime/syntax/syncolor.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/syntax)
+chdir(/home/mneger/dotfiles)
+Zeile 21: führe "/usr/share/nvim/runtime/syntax/syncolor.vim" aus
+Ausführen von /usr/share/nvim/runtime/syntax/syncolor.vim beendet
+weiter in /usr/share/nvim/runtime/syntax/synload.vim
+Suche nach "/usr/share/nvim/site/after/syntax/syncolor.vim"
+Suche nach "/usr/local/share/nvim/site/after/syntax/syncolor.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/syntax/syncolor.vim"
+Suche nach "/etc/xdg/nvim/after/syntax/syncolor.vim"
+Suche nach "/home/mneger/.config/nvim/after/syntax/syncolor.vim"
+Ausführen von /usr/share/nvim/runtime/syntax/synload.vim beendet
+weiter in /usr/share/nvim/runtime/syntax/syntax.vim
+Ausführen von /usr/share/nvim/runtime/syntax/syntax.vim beendet
+weiter in function plug#end
+chdir(/home/mneger/dotfiles)
+chdir(/home/mneger/dotfiles/vim-settings)
+chdir(/home/mneger/dotfiles)
+Zeile 41: führe "/home/mneger/dotfiles/vim-settings/general.vim" aus
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/syntax)
+chdir(/home/mneger/dotfiles)
+Zeile 4: führe "/usr/share/nvim/runtime/syntax/syntax.vim" aus
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/syntax)
+chdir(/home/mneger/dotfiles)
+Zeile 15: führe "/usr/share/nvim/runtime/syntax/nosyntax.vim" aus
+Ausführen von /usr/share/nvim/runtime/syntax/nosyntax.vim beendet
+weiter in /usr/share/nvim/runtime/syntax/syntax.vim
+Suche nach "syntax/synload.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/syntax/synload.vim"
+Suche nach "/home/mneger/.fzf/syntax/synload.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/syntax/synload.vim"
+Suche nach "/etc/xdg/nvim/syntax/synload.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/syntax/synload.vim"
+Suche nach "/usr/local/share/nvim/site/syntax/synload.vim"
+Suche nach "/usr/share/nvim/site/syntax/synload.vim"
+Suche nach "/usr/share/nvim/runtime/syntax/synload.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/syntax)
+chdir(/home/mneger/dotfiles)
+Zeile 19: führe "/usr/share/nvim/runtime/syntax/synload.vim" aus
+Suche nach "syntax/syncolor.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/syntax/syncolor.vim"
+Suche nach "/home/mneger/.fzf/syntax/syncolor.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/syntax/syncolor.vim"
+Suche nach "/etc/xdg/nvim/syntax/syncolor.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/syntax/syncolor.vim"
+Suche nach "/usr/local/share/nvim/site/syntax/syncolor.vim"
+Suche nach "/usr/share/nvim/site/syntax/syncolor.vim"
+Suche nach "/usr/share/nvim/runtime/syntax/syncolor.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/syntax)
+chdir(/home/mneger/dotfiles)
+Zeile 21: führe "/usr/share/nvim/runtime/syntax/syncolor.vim" aus
+Ausführen von /usr/share/nvim/runtime/syntax/syncolor.vim beendet
+weiter in /usr/share/nvim/runtime/syntax/synload.vim
+Suche nach "/usr/share/nvim/site/after/syntax/syncolor.vim"
+Suche nach "/usr/local/share/nvim/site/after/syntax/syncolor.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/syntax/syncolor.vim"
+Suche nach "/etc/xdg/nvim/after/syntax/syncolor.vim"
+Suche nach "/home/mneger/.config/nvim/after/syntax/syncolor.vim"
+Ausführen von /usr/share/nvim/runtime/syntax/synload.vim beendet
+weiter in /usr/share/nvim/runtime/syntax/syntax.vim
+Ausführen von /usr/share/nvim/runtime/syntax/syntax.vim beendet
+weiter in /home/mneger/dotfiles/vim-settings/general.vim
+Ausführen von /home/mneger/dotfiles/vim-settings/general.vim beendet
+weiter in /home/mneger/.config/nvim/init.vim
+chdir(/home/mneger/dotfiles)
+chdir(/home/mneger/dotfiles/vim-settings)
+chdir(/home/mneger/dotfiles)
+Zeile 42: führe "/home/mneger/dotfiles/vim-settings/mappings.vim" aus
+Ausführen von /home/mneger/dotfiles/vim-settings/mappings.vim beendet
+weiter in /home/mneger/.config/nvim/init.vim
+Suche nach "syntax/syncolor.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/syntax/syncolor.vim"
+Suche nach "/home/mneger/.fzf/syntax/syncolor.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/syntax/syncolor.vim"
+Suche nach "/etc/xdg/nvim/syntax/syncolor.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/syntax/syncolor.vim"
+Suche nach "/usr/local/share/nvim/site/syntax/syncolor.vim"
+Suche nach "/usr/share/nvim/site/syntax/syncolor.vim"
+Suche nach "/usr/share/nvim/runtime/syntax/syncolor.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/syntax)
+chdir(/home/mneger/dotfiles)
+Zeile 131: führe "/usr/share/nvim/runtime/syntax/syncolor.vim" aus
+Ausführen von /usr/share/nvim/runtime/syntax/syncolor.vim beendet
+weiter in /home/mneger/.config/nvim/init.vim
+Suche nach "/usr/share/nvim/site/after/syntax/syncolor.vim"
+Suche nach "/usr/local/share/nvim/site/after/syntax/syncolor.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/syntax/syncolor.vim"
+Suche nach "/etc/xdg/nvim/after/syntax/syncolor.vim"
+Suche nach "/home/mneger/.config/nvim/after/syntax/syncolor.vim"
+Ausführen von /home/mneger/.config/nvim/init.vim beendet
+Suche nach "plugin/**/*.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/plugin/**/*.vim"
+Suche nach "/home/mneger/.fzf/plugin/**/*.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/home/mneger/.fzf/plugin)
+chdir(/home/mneger/dotfiles)
+führe "/home/mneger/.fzf/plugin/fzf.vim" aus
+Suche nach "autoload/fzf.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/autoload/fzf.vim"
+Suche nach "/home/mneger/.fzf/autoload/fzf.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/autoload/fzf.vim"
+Suche nach "/etc/xdg/nvim/autoload/fzf.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/autoload/fzf.vim"
+Suche nach "/usr/local/share/nvim/site/autoload/fzf.vim"
+Suche nach "/usr/share/nvim/site/autoload/fzf.vim"
+Suche nach "/usr/share/nvim/runtime/autoload/fzf.vim"
+Suche nach "/usr/share/nvim/site/after/autoload/fzf.vim"
+Suche nach "/usr/local/share/nvim/site/after/autoload/fzf.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/autoload/fzf.vim"
+Suche nach "/etc/xdg/nvim/after/autoload/fzf.vim"
+Suche nach "/home/mneger/.config/nvim/after/autoload/fzf.vim"
+not found in 'runtimepath': "autoload/fzf.vim"
+Ausführen von /home/mneger/.fzf/plugin/fzf.vim beendet
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/plugin/**/*.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/home/mneger/.vim/plugged/fzf.vim/plugin)
+chdir(/home/mneger/dotfiles)
+führe "/home/mneger/.vim/plugged/fzf.vim/plugin/fzf.vim" aus
+Ausführen von /home/mneger/.vim/plugged/fzf.vim/plugin/fzf.vim beendet
+Suche nach "/etc/xdg/nvim/plugin/**/*.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/plugin/**/*.vim"
+Suche nach "/usr/local/share/nvim/site/plugin/**/*.vim"
+Suche nach "/usr/share/nvim/site/plugin/**/*.vim"
+Suche nach "/usr/share/nvim/runtime/plugin/**/*.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/mneger/dotfiles)
+führe "/usr/share/nvim/runtime/plugin/gzip.vim" aus
+Ausführen von /usr/share/nvim/runtime/plugin/gzip.vim beendet
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/mneger/dotfiles)
+führe "/usr/share/nvim/runtime/plugin/health.vim" aus
+Ausführen von /usr/share/nvim/runtime/plugin/health.vim beendet
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/mneger/dotfiles)
+führe "/usr/share/nvim/runtime/plugin/man.vim" aus
+Ausführen von /usr/share/nvim/runtime/plugin/man.vim beendet
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/mneger/dotfiles)
+führe "/usr/share/nvim/runtime/plugin/matchit.vim" aus
+Ausführen von /usr/share/nvim/runtime/plugin/matchit.vim beendet
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/mneger/dotfiles)
+führe "/usr/share/nvim/runtime/plugin/matchparen.vim" aus
+Ausführen von /usr/share/nvim/runtime/plugin/matchparen.vim beendet
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/mneger/dotfiles)
+führe "/usr/share/nvim/runtime/plugin/netrwPlugin.vim" aus
+Ausführen von /usr/share/nvim/runtime/plugin/netrwPlugin.vim beendet
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/mneger/dotfiles)
+führe "/usr/share/nvim/runtime/plugin/rplugin.vim" aus
+Ausführen von /usr/share/nvim/runtime/plugin/rplugin.vim beendet
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/mneger/dotfiles)
+führe "/usr/share/nvim/runtime/plugin/rrhelper.vim" aus
+Ausführen von /usr/share/nvim/runtime/plugin/rrhelper.vim beendet
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/mneger/dotfiles)
+führe "/usr/share/nvim/runtime/plugin/shada.vim" aus
+Ausführen von /usr/share/nvim/runtime/plugin/shada.vim beendet
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/mneger/dotfiles)
+führe "/usr/share/nvim/runtime/plugin/spellfile.vim" aus
+Ausführen von /usr/share/nvim/runtime/plugin/spellfile.vim beendet
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/mneger/dotfiles)
+führe "/usr/share/nvim/runtime/plugin/tarPlugin.vim" aus
+Ausführen von /usr/share/nvim/runtime/plugin/tarPlugin.vim beendet
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/mneger/dotfiles)
+führe "/usr/share/nvim/runtime/plugin/tohtml.vim" aus
+Ausführen von /usr/share/nvim/runtime/plugin/tohtml.vim beendet
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/mneger/dotfiles)
+führe "/usr/share/nvim/runtime/plugin/tutor.vim" aus
+Ausführen von /usr/share/nvim/runtime/plugin/tutor.vim beendet
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/plugin)
+chdir(/home/mneger/dotfiles)
+führe "/usr/share/nvim/runtime/plugin/zipPlugin.vim" aus
+Ausführen von /usr/share/nvim/runtime/plugin/zipPlugin.vim beendet
+Suche nach "/usr/share/nvim/site/after/plugin/**/*.vim"
+Suche nach "/usr/local/share/nvim/site/after/plugin/**/*.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/plugin/**/*.vim"
+Suche nach "/etc/xdg/nvim/after/plugin/**/*.vim"
+Suche nach "/home/mneger/.config/nvim/after/plugin/**/*.vim"
+Suche nach "pack/*/start/*" in "/home/mneger/.config/nvim,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/pack/*/start/*"
+Suche nach "/etc/xdg/nvim/pack/*/start/*"
+Suche nach "/home/mneger/.local/share/nvim/site/pack/*/start/*"
+Suche nach "/usr/local/share/nvim/site/pack/*/start/*"
+Suche nach "/usr/share/nvim/site/pack/*/start/*"
+Suche nach "/usr/share/nvim/runtime/pack/*/start/*"
+Suche nach "/usr/share/nvim/site/after/pack/*/start/*"
+Suche nach "/usr/local/share/nvim/site/after/pack/*/start/*"
+Suche nach "/home/mneger/.local/share/nvim/site/after/pack/*/start/*"
+Suche nach "/etc/xdg/nvim/after/pack/*/start/*"
+Suche nach "/home/mneger/.config/nvim/after/pack/*/start/*"
+not found in 'packpath': "pack/*/start/*"
+Suche nach "pack/*/start/*" in "/home/mneger/.config/nvim,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/pack/*/start/*"
+Suche nach "/etc/xdg/nvim/pack/*/start/*"
+Suche nach "/home/mneger/.local/share/nvim/site/pack/*/start/*"
+Suche nach "/usr/local/share/nvim/site/pack/*/start/*"
+Suche nach "/usr/share/nvim/site/pack/*/start/*"
+Suche nach "/usr/share/nvim/runtime/pack/*/start/*"
+Suche nach "/usr/share/nvim/site/after/pack/*/start/*"
+Suche nach "/usr/local/share/nvim/site/after/pack/*/start/*"
+Suche nach "/home/mneger/.local/share/nvim/site/after/pack/*/start/*"
+Suche nach "/etc/xdg/nvim/after/pack/*/start/*"
+Suche nach "/home/mneger/.config/nvim/after/pack/*/start/*"
+not found in 'packpath': "pack/*/start/*"
+Reading ShaDa file "/home/mneger/.local/share/nvim/shada/main.shada" Information Marken oldfiles
+"vimrc" 
+"vimrc" 131L, 3029C
+Reading ShaDa file "/home/mneger/.local/share/nvim/shada/main.shada" Marken
+Ausführung von BufReadPost Autokommandos für "*"
+Autokommando if !did_filetype() && expand("<amatch>") !~ g:ft_ignore_pat | runtime! scripts.vim | endif
+
+Suche nach "scripts.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/scripts.vim"
+Suche nach "/home/mneger/.fzf/scripts.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/scripts.vim"
+Suche nach "/etc/xdg/nvim/scripts.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/scripts.vim"
+Suche nach "/usr/local/share/nvim/site/scripts.vim"
+Suche nach "/usr/share/nvim/site/scripts.vim"
+Suche nach "/usr/share/nvim/runtime/scripts.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime)
+chdir(/home/mneger/dotfiles)
+Zeile 0: führe "/usr/share/nvim/runtime/scripts.vim" aus
+Ausführen von /usr/share/nvim/runtime/scripts.vim beendet
+weiter in BufReadPost Autokommandos für "*"
+Suche nach "/usr/share/nvim/site/after/scripts.vim"
+Suche nach "/usr/local/share/nvim/site/after/scripts.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/scripts.vim"
+Suche nach "/etc/xdg/nvim/after/scripts.vim"
+Suche nach "/home/mneger/.config/nvim/after/scripts.vim"
+Ausführung von BufReadPost Autokommandos für "*vimrc*"
+Autokommando call s:StarSetf('vim')
+
+Ausführung von FileType Autokommandos für "*"
+Autokommando call s:LoadFTPlugin()
+
+Suche nach "ftplugin/vim.vim ftplugin/vim_*.vim ftplugin/vim/*.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/ftplugin/vim.vim"
+Suche nach "/home/mneger/.config/nvim/ftplugin/vim_*.vim"
+Suche nach "/home/mneger/.config/nvim/ftplugin/vim/*.vim"
+Suche nach "/home/mneger/.fzf/ftplugin/vim.vim"
+Suche nach "/home/mneger/.fzf/ftplugin/vim_*.vim"
+Suche nach "/home/mneger/.fzf/ftplugin/vim/*.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/ftplugin/vim.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/ftplugin/vim_*.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/ftplugin/vim/*.vim"
+Suche nach "/etc/xdg/nvim/ftplugin/vim.vim"
+Suche nach "/etc/xdg/nvim/ftplugin/vim_*.vim"
+Suche nach "/etc/xdg/nvim/ftplugin/vim/*.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/ftplugin/vim.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/ftplugin/vim_*.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/ftplugin/vim/*.vim"
+Suche nach "/usr/local/share/nvim/site/ftplugin/vim.vim"
+Suche nach "/usr/local/share/nvim/site/ftplugin/vim_*.vim"
+Suche nach "/usr/local/share/nvim/site/ftplugin/vim/*.vim"
+Suche nach "/usr/share/nvim/site/ftplugin/vim.vim"
+Suche nach "/usr/share/nvim/site/ftplugin/vim_*.vim"
+Suche nach "/usr/share/nvim/site/ftplugin/vim/*.vim"
+Suche nach "/usr/share/nvim/runtime/ftplugin/vim.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/ftplugin)
+chdir(/home/mneger/dotfiles)
+Zeile 17: führe "/usr/share/nvim/runtime/ftplugin/vim.vim" aus
+Ausführen von /usr/share/nvim/runtime/ftplugin/vim.vim beendet
+weiter in function <SNR>4_LoadFTPlugin
+Suche nach "/usr/share/nvim/runtime/ftplugin/vim_*.vim"
+Suche nach "/usr/share/nvim/runtime/ftplugin/vim/*.vim"
+Suche nach "/usr/share/nvim/site/after/ftplugin/vim.vim"
+Suche nach "/usr/share/nvim/site/after/ftplugin/vim_*.vim"
+Suche nach "/usr/share/nvim/site/after/ftplugin/vim/*.vim"
+Suche nach "/usr/local/share/nvim/site/after/ftplugin/vim.vim"
+Suche nach "/usr/local/share/nvim/site/after/ftplugin/vim_*.vim"
+Suche nach "/usr/local/share/nvim/site/after/ftplugin/vim/*.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/ftplugin/vim.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/ftplugin/vim_*.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/ftplugin/vim/*.vim"
+Suche nach "/etc/xdg/nvim/after/ftplugin/vim.vim"
+Suche nach "/etc/xdg/nvim/after/ftplugin/vim_*.vim"
+Suche nach "/etc/xdg/nvim/after/ftplugin/vim/*.vim"
+Suche nach "/home/mneger/.config/nvim/after/ftplugin/vim.vim"
+Suche nach "/home/mneger/.config/nvim/after/ftplugin/vim_*.vim"
+Suche nach "/home/mneger/.config/nvim/after/ftplugin/vim/*.vim"
+Ausführung von FileType Autokommandos für "*"
+Autokommando call s:LoadIndent()
+
+Suche nach "indent/vim.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/indent/vim.vim"
+Suche nach "/home/mneger/.fzf/indent/vim.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/indent/vim.vim"
+Suche nach "/etc/xdg/nvim/indent/vim.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/indent/vim.vim"
+Suche nach "/usr/local/share/nvim/site/indent/vim.vim"
+Suche nach "/usr/share/nvim/site/indent/vim.vim"
+Suche nach "/usr/share/nvim/runtime/indent/vim.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/indent)
+chdir(/home/mneger/dotfiles)
+Zeile 14: führe "/usr/share/nvim/runtime/indent/vim.vim" aus
+Ausführen von /usr/share/nvim/runtime/indent/vim.vim beendet
+weiter in function <SNR>5_LoadIndent
+Suche nach "/usr/share/nvim/site/after/indent/vim.vim"
+Suche nach "/usr/local/share/nvim/site/after/indent/vim.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/indent/vim.vim"
+Suche nach "/etc/xdg/nvim/after/indent/vim.vim"
+Suche nach "/home/mneger/.config/nvim/after/indent/vim.vim"
+Ausführung von FileType Autokommandos für "*"
+Autokommando exe "set syntax=" . expand("<amatch>")
+
+Ausführung von Syntax Autokommandos für "*"
+Autokommando call s:SynSet()
+
+Suche nach "syntax/vim.vim syntax/vim/*.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/syntax/vim.vim"
+Suche nach "/home/mneger/.config/nvim/syntax/vim/*.vim"
+Suche nach "/home/mneger/.fzf/syntax/vim.vim"
+Suche nach "/home/mneger/.fzf/syntax/vim/*.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/syntax/vim.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/syntax/vim/*.vim"
+Suche nach "/etc/xdg/nvim/syntax/vim.vim"
+Suche nach "/etc/xdg/nvim/syntax/vim/*.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/syntax/vim.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/syntax/vim/*.vim"
+Suche nach "/usr/local/share/nvim/site/syntax/vim.vim"
+Suche nach "/usr/local/share/nvim/site/syntax/vim/*.vim"
+Suche nach "/usr/share/nvim/site/syntax/vim.vim"
+Suche nach "/usr/share/nvim/site/syntax/vim/*.vim"
+Suche nach "/usr/share/nvim/runtime/syntax/vim.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/syntax)
+chdir(/home/mneger/dotfiles)
+Zeile 24: führe "/usr/share/nvim/runtime/syntax/vim.vim" aus
+Suche nach "autoload/provider/ruby.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/autoload/provider/ruby.vim"
+Suche nach "/home/mneger/.fzf/autoload/provider/ruby.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/autoload/provider/ruby.vim"
+Suche nach "/etc/xdg/nvim/autoload/provider/ruby.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/autoload/provider/ruby.vim"
+Suche nach "/usr/local/share/nvim/site/autoload/provider/ruby.vim"
+Suche nach "/usr/share/nvim/site/autoload/provider/ruby.vim"
+Suche nach "/usr/share/nvim/runtime/autoload/provider/ruby.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/autoload/provider)
+chdir(/home/mneger/dotfiles)
+Zeile 660: führe "/usr/share/nvim/runtime/autoload/provider/ruby.vim" aus
+Suche nach "autoload/remote/host.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/autoload/remote/host.vim"
+Suche nach "/home/mneger/.fzf/autoload/remote/host.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/autoload/remote/host.vim"
+Suche nach "/etc/xdg/nvim/autoload/remote/host.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/autoload/remote/host.vim"
+Suche nach "/usr/local/share/nvim/site/autoload/remote/host.vim"
+Suche nach "/usr/share/nvim/site/autoload/remote/host.vim"
+Suche nach "/usr/share/nvim/runtime/autoload/remote/host.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/autoload/remote)
+chdir(/home/mneger/dotfiles)
+Zeile 77: führe "/usr/share/nvim/runtime/autoload/remote/host.vim" aus
+Ausführen von /usr/share/nvim/runtime/autoload/remote/host.vim beendet
+weiter in /usr/share/nvim/runtime/autoload/provider/ruby.vim
+Ausführen von /usr/share/nvim/runtime/autoload/provider/ruby.vim beendet
+weiter in /usr/share/nvim/runtime/syntax/vim.vim
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/syntax)
+chdir(/home/mneger/dotfiles)
+Zeile 662: führe "/usr/share/nvim/runtime/syntax/ruby.vim" aus
+Ausführen von /usr/share/nvim/runtime/syntax/ruby.vim beendet
+weiter in /usr/share/nvim/runtime/syntax/vim.vim
+Suche nach "autoload/provider/python.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/autoload/provider/python.vim"
+Suche nach "/home/mneger/.fzf/autoload/provider/python.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/autoload/provider/python.vim"
+Suche nach "/etc/xdg/nvim/autoload/provider/python.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/autoload/provider/python.vim"
+Suche nach "/usr/local/share/nvim/site/autoload/provider/python.vim"
+Suche nach "/usr/share/nvim/site/autoload/provider/python.vim"
+Suche nach "/usr/share/nvim/runtime/autoload/provider/python.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/autoload/provider)
+chdir(/home/mneger/dotfiles)
+Zeile 682: führe "/usr/share/nvim/runtime/autoload/provider/python.vim" aus
+Suche nach "autoload/provider/pythonx.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/autoload/provider/pythonx.vim"
+Suche nach "/home/mneger/.fzf/autoload/provider/pythonx.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/autoload/provider/pythonx.vim"
+Suche nach "/etc/xdg/nvim/autoload/provider/pythonx.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/autoload/provider/pythonx.vim"
+Suche nach "/usr/local/share/nvim/site/autoload/provider/pythonx.vim"
+Suche nach "/usr/share/nvim/site/autoload/provider/pythonx.vim"
+Suche nach "/usr/share/nvim/runtime/autoload/provider/pythonx.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/autoload/provider)
+chdir(/home/mneger/dotfiles)
+Zeile 12: führe "/usr/share/nvim/runtime/autoload/provider/pythonx.vim" aus
+Ausführen von /usr/share/nvim/runtime/autoload/provider/pythonx.vim beendet
+weiter in /usr/share/nvim/runtime/autoload/provider/python.vim
+Ausführen von /usr/share/nvim/runtime/autoload/provider/python.vim beendet
+weiter in /usr/share/nvim/runtime/syntax/vim.vim
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/syntax)
+chdir(/home/mneger/dotfiles)
+Zeile 684: führe "/usr/share/nvim/runtime/syntax/python.vim" aus
+Ausführen von /usr/share/nvim/runtime/syntax/python.vim beendet
+weiter in /usr/share/nvim/runtime/syntax/vim.vim
+Ausführen von /usr/share/nvim/runtime/syntax/vim.vim beendet
+weiter in function <SNR>7_SynSet
+Suche nach "/usr/share/nvim/runtime/syntax/vim/*.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/usr/share/nvim/runtime/syntax/vim)
+chdir(/home/mneger/dotfiles)
+Zeile 24: führe "/usr/share/nvim/runtime/syntax/vim/generated.vim" aus
+Ausführen von /usr/share/nvim/runtime/syntax/vim/generated.vim beendet
+weiter in function <SNR>7_SynSet
+Suche nach "/usr/share/nvim/site/after/syntax/vim.vim"
+Suche nach "/usr/share/nvim/site/after/syntax/vim/*.vim"
+Suche nach "/usr/local/share/nvim/site/after/syntax/vim.vim"
+Suche nach "/usr/local/share/nvim/site/after/syntax/vim/*.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/syntax/vim.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/syntax/vim/*.vim"
+Suche nach "/etc/xdg/nvim/after/syntax/vim.vim"
+Suche nach "/etc/xdg/nvim/after/syntax/vim/*.vim"
+Suche nach "/home/mneger/.config/nvim/after/syntax/vim.vim"
+Suche nach "/home/mneger/.config/nvim/after/syntax/vim/*.vim"
+Ausführung von BufReadPost Autokommandos für "*"
+Autokommando if !did_filetype() && expand("<amatch>") !~ g:ft_ignore_pat    && (getline(1) =~ '^#' || getline(2) =~ '^#' || getline(3) =~ '^#'^I|| getline(4) =~ '^#' || getline(5) =~ '^#') |   setf conf | endif
+
+Ausführung von BufWinEnter Autokommandos für "*"
+Autokommando let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Ausführung von BufEnter Autokommandos für "*"
+Autokommando sil call s:LocalBrowse(expand("<amatch>"))
+
+Ausführung von VimEnter Autokommandos für "*"
+Autokommando sil call s:VimEnter(expand("<amatch>"))
+
+Ausführung von CursorMoved Autokommandos für "*"
+Autokommando call s:Highlight_Matching_Pair()
+
+
+Suche nach "autoload/fzf/vim.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/autoload/fzf/vim.vim"
+Suche nach "/home/mneger/.fzf/autoload/fzf/vim.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+chdir(/home/mneger/dotfiles)
+chdir(/home/mneger/.vim/plugged/fzf.vim/autoload/fzf)
+chdir(/home/mneger/dotfiles)
+führe "/home/mneger/.vim/plugged/fzf.vim/autoload/fzf/vim.vim" aus
+Ausführen von /home/mneger/.vim/plugged/fzf.vim/autoload/fzf/vim.vim beendet
+Ausführung von WinEnter Autokommandos für "*"
+Autokommando call s:dopopd()
+
+Ausführung von WinEnter Autokommandos für "*"
+Autokommando let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Ausführung von WinEnter Autokommandos für "*"
+Autokommando call s:Highlight_Matching_Pair()
+
+Ausführung von BufLeave Autokommandos für "*"
+Autokommando if &ft != "netrw"|let w:netrw_prvfile= expand("%:p")|endif
+
+Ausführung von BufEnter Autokommandos für "*"
+Autokommando sil call s:LocalBrowse(expand("<amatch>"))
+
+Ausführung von BufWinEnter Autokommandos für "*"
+Autokommando let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Ausführung von BufDelete Autokommandos für "*"
+Autokommando silent! call remove(g:fzf#vim#buffers, expand('<abuf>'))
+
+Ausführung von FileType Autokommandos für "*"
+Autokommando call s:LoadFTPlugin()
+
+Suche nach "ftplugin/fzf.vim ftplugin/fzf_*.vim ftplugin/fzf/*.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/ftplugin/fzf.vim"
+Suche nach "/home/mneger/.config/nvim/ftplugin/fzf_*.vim"
+Suche nach "/home/mneger/.config/nvim/ftplugin/fzf/*.vim"
+Suche nach "/home/mneger/.fzf/ftplugin/fzf.vim"
+Suche nach "/home/mneger/.fzf/ftplugin/fzf_*.vim"
+Suche nach "/home/mneger/.fzf/ftplugin/fzf/*.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/ftplugin/fzf.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/ftplugin/fzf_*.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/ftplugin/fzf/*.vim"
+Suche nach "/etc/xdg/nvim/ftplugin/fzf.vim"
+Suche nach "/etc/xdg/nvim/ftplugin/fzf_*.vim"
+Suche nach "/etc/xdg/nvim/ftplugin/fzf/*.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/ftplugin/fzf.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/ftplugin/fzf_*.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/ftplugin/fzf/*.vim"
+Suche nach "/usr/local/share/nvim/site/ftplugin/fzf.vim"
+Suche nach "/usr/local/share/nvim/site/ftplugin/fzf_*.vim"
+Suche nach "/usr/local/share/nvim/site/ftplugin/fzf/*.vim"
+Suche nach "/usr/share/nvim/site/ftplugin/fzf.vim"
+Suche nach "/usr/share/nvim/site/ftplugin/fzf_*.vim"
+Suche nach "/usr/share/nvim/site/ftplugin/fzf/*.vim"
+Suche nach "/usr/share/nvim/runtime/ftplugin/fzf.vim"
+Suche nach "/usr/share/nvim/runtime/ftplugin/fzf_*.vim"
+Suche nach "/usr/share/nvim/runtime/ftplugin/fzf/*.vim"
+Suche nach "/usr/share/nvim/site/after/ftplugin/fzf.vim"
+Suche nach "/usr/share/nvim/site/after/ftplugin/fzf_*.vim"
+Suche nach "/usr/share/nvim/site/after/ftplugin/fzf/*.vim"
+Suche nach "/usr/local/share/nvim/site/after/ftplugin/fzf.vim"
+Suche nach "/usr/local/share/nvim/site/after/ftplugin/fzf_*.vim"
+Suche nach "/usr/local/share/nvim/site/after/ftplugin/fzf/*.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/ftplugin/fzf.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/ftplugin/fzf_*.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/ftplugin/fzf/*.vim"
+Suche nach "/etc/xdg/nvim/after/ftplugin/fzf.vim"
+Suche nach "/etc/xdg/nvim/after/ftplugin/fzf_*.vim"
+Suche nach "/etc/xdg/nvim/after/ftplugin/fzf/*.vim"
+Suche nach "/home/mneger/.config/nvim/after/ftplugin/fzf.vim"
+Suche nach "/home/mneger/.config/nvim/after/ftplugin/fzf_*.vim"
+Suche nach "/home/mneger/.config/nvim/after/ftplugin/fzf/*.vim"
+not found in 'runtimepath': "ftplugin/fzf.vim ftplugin/fzf_*.vim ftplugin/fzf/*.vim"
+Ausführung von FileType Autokommandos für "*"
+Autokommando call s:LoadIndent()
+
+Suche nach "indent/fzf.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/indent/fzf.vim"
+Suche nach "/home/mneger/.fzf/indent/fzf.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/indent/fzf.vim"
+Suche nach "/etc/xdg/nvim/indent/fzf.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/indent/fzf.vim"
+Suche nach "/usr/local/share/nvim/site/indent/fzf.vim"
+Suche nach "/usr/share/nvim/site/indent/fzf.vim"
+Suche nach "/usr/share/nvim/runtime/indent/fzf.vim"
+Suche nach "/usr/share/nvim/site/after/indent/fzf.vim"
+Suche nach "/usr/local/share/nvim/site/after/indent/fzf.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/indent/fzf.vim"
+Suche nach "/etc/xdg/nvim/after/indent/fzf.vim"
+Suche nach "/home/mneger/.config/nvim/after/indent/fzf.vim"
+not found in 'runtimepath': "indent/fzf.vim"
+Ausführung von FileType Autokommandos für "*"
+Autokommando exe "set syntax=" . expand("<amatch>")
+
+Ausführung von Syntax Autokommandos für "*"
+Autokommando call s:SynSet()
+
+Suche nach "syntax/fzf.vim syntax/fzf/*.vim" in "/home/mneger/.config/nvim,/home/mneger/.fzf/,/home/mneger/.vim/plugged/fzf.vim/,/etc/xdg/nvim,/home/mneger/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/share/nvim/runtime,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/mneger/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/mneger/.config/nvim/after"
+Suche nach "/home/mneger/.config/nvim/syntax/fzf.vim"
+Suche nach "/home/mneger/.config/nvim/syntax/fzf/*.vim"
+Suche nach "/home/mneger/.fzf/syntax/fzf.vim"
+Suche nach "/home/mneger/.fzf/syntax/fzf/*.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/syntax/fzf.vim"
+Suche nach "/home/mneger/.vim/plugged/fzf.vim/syntax/fzf/*.vim"
+Suche nach "/etc/xdg/nvim/syntax/fzf.vim"
+Suche nach "/etc/xdg/nvim/syntax/fzf/*.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/syntax/fzf.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/syntax/fzf/*.vim"
+Suche nach "/usr/local/share/nvim/site/syntax/fzf.vim"
+Suche nach "/usr/local/share/nvim/site/syntax/fzf/*.vim"
+Suche nach "/usr/share/nvim/site/syntax/fzf.vim"
+Suche nach "/usr/share/nvim/site/syntax/fzf/*.vim"
+Suche nach "/usr/share/nvim/runtime/syntax/fzf.vim"
+Suche nach "/usr/share/nvim/runtime/syntax/fzf/*.vim"
+Suche nach "/usr/share/nvim/site/after/syntax/fzf.vim"
+Suche nach "/usr/share/nvim/site/after/syntax/fzf/*.vim"
+Suche nach "/usr/local/share/nvim/site/after/syntax/fzf.vim"
+Suche nach "/usr/local/share/nvim/site/after/syntax/fzf/*.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/syntax/fzf.vim"
+Suche nach "/home/mneger/.local/share/nvim/site/after/syntax/fzf/*.vim"
+Suche nach "/etc/xdg/nvim/after/syntax/fzf.vim"
+Suche nach "/etc/xdg/nvim/after/syntax/fzf/*.vim"
+Suche nach "/home/mneger/.config/nvim/after/syntax/fzf.vim"
+Suche nach "/home/mneger/.config/nvim/after/syntax/fzf/*.vim"
+not found in 'runtimepath': "syntax/fzf.vim syntax/fzf/*.vim"
+Ausführung von FileType Autokommandos für "fzf"
+Autokommando call s:fzf_nvim_term()
+-- TERMINAL --
+E118: Zu viele Argumente für Funktion: 5-- TERMINAL --
+Ausführung von BufLeave Autokommandos für "*"
+Autokommando if &ft != "netrw"|let w:netrw_prvfile= expand("%:p")|endif
+
+Ausführung von WinEnter Autokommandos für "*"
+Autokommando call s:dopopd()
+
+Ausführung von WinEnter Autokommandos für "*"
+Autokommando let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Ausführung von WinEnter Autokommandos für "*"
+Autokommando call s:Highlight_Matching_Pair()
+
+Ausführung von BufEnter Autokommandos für "*"
+Autokommando sil call s:LocalBrowse(expand("<amatch>"))
+
+Automatische Entfernung von Autokommando: ColorScheme <buffer=2>
+Automatische Entfernung von Autokommando: WinEnter <buffer=2>
+Ausführung von CursorMoved Autokommandos für "*"
+Autokommando call s:Highlight_Matching_Pair()
+
+
+Writing ShaDa file "/home/mneger/.local/share/nvim/shada/main.shada"
