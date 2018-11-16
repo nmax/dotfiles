@@ -26,4 +26,5 @@ alias todos="ag \"TODO(?! Prio [23])\""
 alias zeus="bundle exec zeus"
 alias aba_i_bims='sudo $(history -p !!)'
 alias dco="docker-compose"
+alias rgi="rg -i"
 

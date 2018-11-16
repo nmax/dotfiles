@@ -1,12 +1,15 @@
 call plug#begin('~/.vim/plugged')
 Plug 'machakann/vim-highlightedyank'
-Plug 'cocopon/iceberg.vim'
+Plug 'andreypopp/vim-colors-plain'
+Plug 'nightsense/snow'
+
+" Plug 'cocopon/iceberg.vim'
 Plug 'romainl/vim-qf'
-Plug 'romainl/vim-cool'
+" Plug 'romainl/vim-cool'
 Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
 Plug 'w0rp/ale'
-Plug 'rust-lang/rust.vim', { 'for': 'rust' }
-Plug 'tpope/vim-surround'
+" Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'machakann/vim-sandwich'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-eunuch'
@@ -23,10 +26,16 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'benmills/vimux'
 Plug 'skalnik/vim-vroom',
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
 call plug#end()
 
+" runtime macros/sandwich/keymap/surround.vim
+
 syntax enable
-set relativenumber
+" set relativenumber
 set autoread " If a file is changed outside of Vim reload it without asking
 set statusline=%<\%f\ %m%r%y%w%=%l\/%-L\ %3c
 set laststatus=2
@@ -78,6 +87,8 @@ set undofile
 let mapleader = "\<Space>"
 nnoremap <leader>y :call system('nc localhost 8377', @0)<CR>
 nnoremap <Leader>q :bp<CR>:bd #<CR>
+nnoremap <Leader>bo :only<CR>
+noremap ' `
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
@@ -104,9 +115,9 @@ nnoremap g; g;zz
 nmap <F1> <Plug>qf_qf_previous
 nmap <F2> <Plug>qf_qf_next
 nmap <F3> <Plug>qf_qf_stay_toggle
-nmap ¡ <Plug>qf_loc_previous
-nmap “ <Plug>qf_loc_next
-nmap ¶ <Plug>qf_loc_stay_toggle
+nmap <F7> <Plug>qf_loc_previous
+nmap <F8> <Plug>qf_loc_next
+nmap <F9> <Plug>qf_loc_stay_toggle
 
 let g:ale_ruby_rubocop_executable = "bundle"
 let g:ale_open_list = 0
@@ -114,6 +125,8 @@ let g:lint_on_text_changed = 'never'
 let g:qf_statusline = {}
 let g:qf_statusline.before = '%<\ '
 let g:qf_statusline.after = '\ %f%=%l\/%-6L\ \ \ \ \ '
+
+let g:vroom_cucumber_path = 'cucumber'
 
 augroup mkdir
   autocmd!
@@ -163,15 +176,23 @@ autocmd FileType ruby iab <buffer> vcr! VCR.record_this_example
 
 
 " set autoread
-let g:rustfmt_autosave = 1
+" let g:rustfmt_autosave = 1
+" let g:rustfmt_fail_silently=1
 
 function! FormatXML()
   :%!xmllint --format -
 endfunction
+command! FormatXML :call FormatXML()
+
+function! Rubocop()
+  :silent !bundle exec rubocop -a %
+endfunction
+command! Rubocop :call Rubocop()
 
 function! FormatJSON()
   :%!python -m json.tool
 endfunction
+command! FormatJSON :call FormatJSON()
 
 " --- blockle ---
 let g:blockle_mapping = '<Leader>bl'
@@ -221,4 +242,19 @@ let g:highlightedyank_highlight_duration = 300
 au BufReadPost *.hbs set syntax=mustache
 au BufNewFile,BufRead *.json.jbuilder,*.god set ft=ruby
 
-colorscheme iceberg
+if &term =~ '256color'
+  " disable Background Color Erase (BCE) so that color schemes
+  " render properly when inside 256-color tmux and GNU screen.
+  " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
+  set t_ut=
+endif
+
+" let g:LanguageClient_serverCommands = {
+"             \ 'ruby': [ 'solargraph',  'stdio' ],
+"             \ }
+
+" nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+
+set termguicolors
+set background=light
+colorscheme snow
